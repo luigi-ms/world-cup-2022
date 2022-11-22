@@ -1,18 +1,21 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <round-box 
+    :countryLeft="cLeft"
+    :countryRight="cRight"
+  />
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+  import RoundBox from '../components/Round'
 
-export default {
-  name: 'HomeView',
-  components: {
-    HelloWorld
+  export default {
+    name: 'HomeView',
+    components: {RoundBox},
+    data: () => {
+      return {
+        cLeft: { name: "Brasil", goals: 14 },
+        cRight: { name: "Alemanha", goals: 0 }
+      }
+    }
   }
-}
 </script>
