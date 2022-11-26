@@ -2,6 +2,10 @@
   <round-box 
     :countryLeft="cLeft"
     :countryRight="cRight"
+    :datetime="dateTime"
+    :stadium="local"
+    wasPlayed
+    leftWon
   />
 </template>
 
@@ -13,8 +17,10 @@
     components: {RoundBox},
     data: () => {
       return {
-        cLeft: { name: "Brasil", goals: 14 },
-        cRight: { name: "Alemanha", goals: 0 }
+        cLeft: { name: "Brasil", goals: 2 },
+        cRight: { name: "Servia", goals: 0 },
+        dateTime: new Date("2022/11/26 16:00"),
+        local: "Lusail"
       }
     }
   }
