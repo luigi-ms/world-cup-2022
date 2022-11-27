@@ -1,27 +1,39 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import Vue from 'vue';
+import VueRouter from 'vue-router';
+import GroupsView from '../views/GroupsView.vue';
+import RoundOf16 from '../views/Round16View.vue';
+import QuarterFinal from '../views/QuarterFinal.vue';
+import SemiAndFinal from '../views/SemiAndFinal.vue';
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
 const routes = [
   {
     path: '/',
-    name: 'home',
-    component: HomeView
+    redirect: '/groups'
   },
   {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
+    path: '/groups',
+    name: 'groups',
+    component: GroupsView
+  },
+  {
+    path: '/round-16',
+    name: 'roundOf16',
+    component: RoundOf16
+  },
+  {
+    path: '/quarter',
+    name: 'quarterFinal',
+    component: QuarterFinal
+  },
+  {
+    path: '/semi-and-final',
+    name: 'semiAndFinal',
+    component: SemiAndFinal
   }
-]
+];
 
-const router = new VueRouter({
-  routes
-})
+const router = new VueRouter({ routes });
 
 export default router

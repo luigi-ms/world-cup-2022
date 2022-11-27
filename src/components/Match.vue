@@ -36,7 +36,7 @@
 
 <script>
 export default {
-  name: "RoundBox",
+  name: "MatchBox",
   data: () => {
     return {
       date: "dd/mm",
