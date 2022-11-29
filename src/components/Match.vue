@@ -40,23 +40,27 @@ export default {
   data: () => {
     return {
       date: "dd/mm",
-      hour: "hh"
+      hour: "hh",
+      leftWon: false,
+      rightWon: false
     }
   },
   props: {
     countryLeft: Object,
     countryRight: Object,
-    datetime: Date,
+    datetime: String,
     stadium: String,
-    wasPlayed: Boolean,
-    leftWon: Boolean,
-    rightWon: Boolean
+    wasPlayed: Boolean
   },
   mounted(){
-    this.date = this.datetime.getDate()+"/"+(this.datetime.getMonth()+1);
-    this.hour = (this.datetime.getHours() < 10) 
-      ? "0"+this.datetime.getHours()+"h"
-      : this.datetime.getHours()+"h";
+    this.date = this.datetime.substr(0, 5);
+    this.hour = this.datetime.substr(6);
+    
+    if(this.countryLeft.goals > this.countryRight.goals){
+      this.leftWon = true;
+    }else if(this.countryLeft.goals < this.countryRight.goals){
+      this.rightWon = true;
+    }
   }
 };
 </script>

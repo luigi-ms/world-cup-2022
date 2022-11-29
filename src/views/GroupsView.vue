@@ -14,27 +14,42 @@
       </v-col>
       <v-col md=10 id="roundSelect">
         <v-pagination v-model="roundPage"
-          length=3 
+          value=Number(roundPage)
+          :length=Number(3)
           circle></v-pagination>
       </v-col>
     </v-row>
+    <match-list :whichShow=roundAlias />
   </v-container>
 </template>
 
 <script>
-//  import MatchBox from '../components/Match'
-
+  import MatchList from '../components/MatchList.vue'
+  
   export default {
     name: 'GroupsView',
-    //  components: { MatchBox },
+    components: { MatchList },
     data: () => {
       return {
-        cLeft: { name: "Brasil", goals: 2 },
-        cRight: { name: "Servia", goals: 0 },
-        dateTime: new Date("2022/11/26 16:00"),
-        local: "Lusail",
-        roundPage: 1
+        roundPage: 0,
+        roundAlias: ""
       }
+    },
+    watch: {
+      roundPage(){
+        console.log(this.roundPage);
+        if(this.roundPage === 1){
+          this.roundAlias = "group-one";
+        }else if(this.roundPage === 2){
+          this.roundAlias = "group-two";
+        }else if(this.roundPage === 3){
+          this.roundAlias = "group-three";
+        }
+      }
+    },
+    mounted(){
+      this.roundAlias = "group-one";
+      this.roundPage = 1;
     }
   }
 </script>
