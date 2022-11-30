@@ -1,18 +1,33 @@
 <template>
-  <div><h1>Oitavas de Final</h1></div>
+  <v-container>
+    <v-row>
+      <v-col>
+        <h1>Oitavas de final</h1>
+      </v-col>
+    </v-row>
+    <v-row>
+      <v-col>
+        <match-list :matches=sixteens key="round-sixteens" />
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <script>
-//  import MatchBox from '../components/Match'
+  import MatchList from '../components/MatchList';
+  import sixteens from '../phases/sixteens.js';
 
   export default {
     name: 'RoundOf16',
-    //  components: { MatchBox },
+    components: { MatchList },
     data: () => {
-      return {}
+      return {
+        sixteens: sixteens.matches
+      }
     }
   }
 </script>
 
 <style scoped>
+h1 { text-align: center; }
 </style>

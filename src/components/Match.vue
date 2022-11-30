@@ -1,10 +1,5 @@
 <template>
   <v-container id="round">
-    <v-row v-show="isMatchEmpty()">
-      <v-col>
-        <p>Partida vazia</p>
-      </v-col>
-    </v-row>
     <v-row id="metadata">
       <v-col>
         <v-icon dense>mdi-calendar-month</v-icon>
@@ -20,15 +15,27 @@
       </v-col>
     </v-row>
     <v-row id="countryNames">
-      <v-col>
-        <v-img 
+      <v-col v-if="isNameEmpty()">
+        <v-icon v-if="isNameEmpty()">
+          mdi-flag
+        </v-icon>
+        <span>Team</span>
+      </v-col>
+      <v-col v-else>
+        <v-img
           class="flag"
           max-width=30 
           :src="getFlag(countryLeft.name)"
           :alt=countryLeft.name></v-img>
         <span>{{ countryLeft.name }}</span>
       </v-col>
-      <v-col>
+      <v-col v-if="isNameEmpty()">
+        <v-icon v-if="isNameEmpty()">
+          mdi-flag
+        </v-icon>
+        <span>Team</span>
+      </v-col>
+      <v-col v-else>
         <v-img 
           class="flag"
           max-width=30 
@@ -56,18 +63,37 @@ export default {
   name: "MatchBox",
   data: () => {
     return {
-      date: "dd/mm",
-      hour: "hh",
+      date: "00/00",
+      hour: "00",
       leftWon: false,
       rightWon: false
     }
   },
   props: {
-    countryLeft: Object,
-    countryRight: Object,
-    datetime: String,
-    stadium: String,
-    wasPlayed: Boolean
+    countryLeft: {
+      type: Object,
+      default: () => {
+        return { name: "Team", goals: 0 };
+      }
+    },
+    countryRight: {
+      type: Object,
+      default: () => {
+        return { name: "Team", goals: 0 };
+      }
+    },
+    datetime: {
+      type: String,
+      default: "00/00 00h"
+    },
+    stadium: {
+      type: String,
+      default: "Stadium"
+    },
+    wasPlayed: {
+      type: Boolean,
+      default: false
+    }
   },
   mounted(){
     this.date = this.datetime.substr(0, 5);
@@ -78,19 +104,21 @@ export default {
     }else if(this.countryLeft.goals < this.countryRight.goals){
       this.rightWon = true;
     }
+    console.log(this.countryLeft);
   },
   methods: {
     getFlag(countryName){
+      if(countryName === "") return "";
+
       const abrev = countries[countryName];
 
       return (abrev !== "ESP") 
         ? require('../assets/'+abrev+'.png')
         : require('../assets/'+abrev+'.jpeg');
     },
-    isMatchEmpty(){
-      return (this.countryLeft === {}) && (this.countryRight === {})
-      && (this.datetime === "") && (this.stadium === "")
-      && (this.date === "" && this.hour === "");
+    isNameEmpty(){ 
+      return this.countryLeft.name === "" 
+      && this.countryRight.name === ""; 
     }
   }
 };
