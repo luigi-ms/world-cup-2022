@@ -1,5 +1,10 @@
 <template>
   <v-container id="round">
+    <v-row v-show="isMatchEmpty()">
+      <v-col>
+        <p>Partida vazia</p>
+      </v-col>
+    </v-row>
     <v-row id="metadata">
       <v-col>
         <v-icon dense>mdi-calendar-month</v-icon>
@@ -16,11 +21,19 @@
     </v-row>
     <v-row id="countryNames">
       <v-col>
-        <v-img :src=findFlagSrc(countryLeft.name) />
+        <v-img 
+          class="flag"
+          max-width=30 
+          :src="getFlag(countryLeft.name)"
+          :alt=countryLeft.name></v-img>
         <span>{{ countryLeft.name }}</span>
       </v-col>
       <v-col>
-        <v-img :src=findFlagSrc(countryRight.name) />
+        <v-img 
+          class="flag"
+          max-width=30 
+          :src="getFlag(countryRight.name)"
+          :alt=countryRight.name></v-img>
         <span>{{ countryRight.name }}</span>
       </v-col>
     </v-row>
@@ -67,9 +80,17 @@ export default {
     }
   },
   methods: {
-    findFlagSrc(countryName){
+    getFlag(countryName){
       const abrev = countries[countryName];
-      return `../assets/${abrev}.png`;
+
+      return (abrev !== "ESP") 
+        ? require('../assets/'+abrev+'.png')
+        : require('../assets/'+abrev+'.jpeg');
+    },
+    isMatchEmpty(){
+      return (this.countryLeft === {}) && (this.countryRight === {})
+      && (this.datetime === "") && (this.stadium === "")
+      && (this.date === "" && this.hour === "");
     }
   }
 };
@@ -99,4 +120,6 @@ export default {
 #metadata * { text-align: center; }
 
 .winnerSign { border-bottom: 3px solid green; }
+
+.flag { margin-right: 2vw; }
 </style>

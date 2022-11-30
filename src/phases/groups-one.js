@@ -93,7 +93,7 @@ const groups = {
     },
     {
       cLeft: { name: "Brasil", goals: 2 },
-      cRight: { name: "Sèrvia", goals: 0 },
+      cRight: { name: "Sérvia", goals: 0 },
       datetime: "24/11 16h",
       local: "Lusail",
       wasPlayed: true

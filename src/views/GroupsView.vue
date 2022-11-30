@@ -77,6 +77,6 @@ h1 { text-align: center; }
 
 #roundSelect {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
 }
 </style>

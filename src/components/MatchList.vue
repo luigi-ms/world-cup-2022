@@ -25,6 +25,9 @@
     },
     props: {
       matches: Array
+    },
+    mounted(){
+      console.log(this.matches)
     }
   };
 </script>
@@ -33,6 +36,6 @@
 .match {
   display: flex;
   flex-direction: column;
-  margin-top: 2vh;
+  margin-top: 1vh;
 }
 </style>

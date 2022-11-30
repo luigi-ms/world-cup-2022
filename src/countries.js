@@ -3,7 +3,7 @@ const countries = {
   "Austrália": "AUS",
   "Bélgica": "BEL",
   "Brasil": "BRA",
-  "Camarões": "CAM",
+  "Camarões": "CMR",
   "Canadá": "CAN",
   "Costa Rica": "CRC",
   "Croácia": "CRO",
