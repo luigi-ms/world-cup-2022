@@ -1,7 +1,4 @@
 <template>
-  <!-- Usar um pagination e renderizar cada rodada
-  isoladamente. Cada rodada tera um array ds partidas
-  jogadas.-->
   <v-container>
     <v-row>
       <v-col>
@@ -19,12 +16,23 @@
           circle></v-pagination>
       </v-col>
     </v-row>
-    <match-list :whichShow=roundAlias />
+    <div v-if="showOne">
+      <match-list :matches=roundOne key="round-one" />
+    </div>
+    <div v-else-if="showTwo">
+      <match-list :matches=roundTwo key="round-two" />
+    </div>
+    <div v-else>
+      <match-list :matches=roundThree key="round-three" />
+    </div>
   </v-container>
 </template>
 
 <script>
   import MatchList from '../components/MatchList.vue'
+  import groups from '../phases/groups-one.js';
+  import groupsTwo from '../phases/groups-two.js';
+  import groupsThree from '../phases/groups-three.js';
   
   export default {
     name: 'GroupsView',
@@ -32,23 +40,33 @@
     data: () => {
       return {
         roundPage: 0,
-        roundAlias: ""
+        roundOne: groups.matches,
+        showOne: true,
+        roundTwo: groupsTwo.matches,
+        showTwo: false,
+        roundThree: groupsThree.matches,
+        showThree: false
       }
     },
     watch: {
       roundPage(){
-        console.log(this.roundPage);
         if(this.roundPage === 1){
-          this.roundAlias = "group-one";
+          this.showOne = true;
+          this.showTwo = false;
+          this.showThree = false;
         }else if(this.roundPage === 2){
-          this.roundAlias = "group-two";
+          this.showOne = false;
+          this.showTwo = true;
+          this.showThree = false;
         }else if(this.roundPage === 3){
-          this.roundAlias = "group-three";
+          this.showOne = false;
+          this.showTwo = false;
+          this.showThree = true;
         }
       }
     },
     mounted(){
-      this.roundAlias = "group-one";
+      this.roundMatchList = groups.matches;
       this.roundPage = 1;
     }
   }

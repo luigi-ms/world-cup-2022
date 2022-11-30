@@ -16,9 +16,11 @@
     </v-row>
     <v-row id="countryNames">
       <v-col>
+        <v-img :src=findFlagSrc(countryLeft.name) />
         <span>{{ countryLeft.name }}</span>
       </v-col>
       <v-col>
+        <v-img :src=findFlagSrc(countryRight.name) />
         <span>{{ countryRight.name }}</span>
       </v-col>
     </v-row>
@@ -35,6 +37,8 @@
 </template>
 
 <script>
+import countries from '../countries.js';
+
 export default {
   name: "MatchBox",
   data: () => {
@@ -60,6 +64,12 @@ export default {
       this.leftWon = true;
     }else if(this.countryLeft.goals < this.countryRight.goals){
       this.rightWon = true;
+    }
+  },
+  methods: {
+    findFlagSrc(countryName){
+      const abrev = countries[countryName];
+      return `../assets/${abrev}.png`;
     }
   }
 };
