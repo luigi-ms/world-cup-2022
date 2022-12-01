@@ -15,8 +15,8 @@ const sixteens = {
       wasPlayed: false
     },
     {
-      cLeft: { name: "", goals: 0 },
-      cRight: { name: "", goals: 0 },
+      cLeft: { name: "França", goals: 0 },
+      cRight: { name: "Polõnia", goals: 0 },
       datetime: "04/12 12h",
       local: "Al Thumama",
       wasPlayed: false
@@ -29,8 +29,8 @@ const sixteens = {
       wasPlayed: false
     },
     {
-      cLeft: { name: "França", goals: 0 },
-      cRight: { name: "Polônia", goals: 0 },
+      cLeft: { name: "", goals: 0 },
+      cRight: { name: "Croácia", goals: 0 },
       datetime: "05/12 12h",
       local: "Al Janoub",
       wasPlayed: false
@@ -43,7 +43,7 @@ const sixteens = {
       wasPlayed: false
     },
     {
-      cLeft: { name: "", goals: 0 },
+      cLeft: { name: "Marrocos", goals: 0 },
       cRight: { name: "", goals: 0 },
       datetime: "06/12 12h",
       local: "Ed. City",
