@@ -99,9 +99,9 @@ export default {
     this.date = this.datetime.substr(0, 5);
     this.hour = this.datetime.substr(6);
     
-    if(this.countryLeft.goals > this.countryRight.goals){
+    if(this.wasPlayed && (this.countryLeft.goals > this.countryRight.goals)){
       this.leftWon = true;
-    }else if(this.countryLeft.goals < this.countryRight.goals){
+    }else if(this.wasPlayed && (this.countryLeft.goals < this.countryRight.goals)){
       this.rightWon = true;
     }
     console.log(this.countryLeft);

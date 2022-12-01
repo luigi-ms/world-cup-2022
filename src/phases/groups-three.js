@@ -71,15 +71,15 @@ const groupsThree = {
       wasPlayed: true
     },
     {
-      cLeft: { name: "Japão", goals: 0 },
-      cRight: { name: "Espanha", goals: 0 },
+      cLeft: { name: "Japão", goals: 2 },
+      cRight: { name: "Espanha", goals: 1 },
       datetime: "01/12 16h",
       local: "Khalifa Int.",
       wasPlayed: false
     },
     {
-      cLeft: { name: "Costa Rica", goals: 0 },
-      cRight: { name: "Alemanha", goals: 0 },
+      cLeft: { name: "Costa Rica", goals: 2 },
+      cRight: { name: "Alemanha", goals: 3 },
       datetime: "01/12 16h",
       local: "Al Bayt",
       wasPlayed: false
