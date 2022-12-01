@@ -79,7 +79,7 @@ const groupsThree = {
     },
     {
       cLeft: { name: "Costa Rica", goals: 2 },
-      cRight: { name: "Alemanha", goals: 3 },
+      cRight: { name: "Alemanha", goals: 4 },
       datetime: "01/12 16h",
       local: "Al Bayt",
       wasPlayed: false
