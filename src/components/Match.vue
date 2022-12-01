@@ -127,13 +127,18 @@ export default {
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
+@media (max-width: 960px;){
+  #round { width: 90vw; }
+}
+
+@media (max-width: 1260px;) {
+  #round { width: 80vw; }
+}
+
 #round {
   font-family: 'Open Sans', 'Arial', sans-serif;
   border: 1px solid grey;
   margin-top: 2vh;
-  margin-left: 5vw;
-  margin-right: 5vw;
-  width: 90vw;
 }
 
 #goals { font-size: 1.35rem; }
@@ -149,5 +154,8 @@ export default {
 
 .winnerSign { border-bottom: 3px solid green; }
 
-.flag { margin-right: 2vw; }
+.flag { 
+  margin-right: 2vw;
+  border: 0.6px solid black;
+}
 </style>

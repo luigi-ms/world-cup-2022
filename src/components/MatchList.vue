@@ -1,8 +1,9 @@
 <template>
-  <v-list>
-    <v-list-item class="match" 
-      v-for="(m, i) in matches" 
-      :key="i">
+  <v-container>
+    <v-row justify-md="space-around">
+      <v-col cols="12" md="6" lg="4" xl="4"
+        v-for="m in matches" 
+        :key="m.datetime">
       <match-box
         :countryLeft="m.cLeft"
         :countryRight="m.cRight"
@@ -10,8 +11,9 @@
         :stadium="m.local"
         :wasPlayed="m.wasPlayed"
       />
-    </v-list-item>
-  </v-list>
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <script>
@@ -33,9 +35,13 @@
 </script>
 
 <style scoped>
-.match {
+@media (max-width: 0px;){}
+
+#matchlist {
   display: flex;
   flex-direction: column;
   margin-top: 1vh;
+  margin-left: 2vw;
+  margin-right: 2vw;
 }
 </style>

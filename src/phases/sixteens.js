@@ -8,15 +8,15 @@ const sixteens = {
       wasPlayed: false
     },
     {
-      cLeft: { name: "", goals: 0 },
-      cRight: { name: "", goals: 0 },
+      cLeft: { name: "Argentina", goals: 0 },
+      cRight: { name: "Austrália", goals: 0 },
       datetime: "03/12 16h",
       local: "Ahmad Bin Ali",
       wasPlayed: false
     },
     {
-      cLeft: { name: "", goals: 0 },
-      cRight: { name: "", goals: 0 },
+      cLeft: { name: "França", goals: 0 },
+      cRight: { name: "Polônia", goals: 0 },
       datetime: "05/12 12h",
       local: "Al Janoub",
       wasPlayed: false

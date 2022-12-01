@@ -1,60 +1,60 @@
 const groupsThree = {
   matches: [
     {
-      cLeft: { name: "Holanda", goals: 0 },
+      cLeft: { name: "Holanda", goals: 2 },
       cRight: { name: "Catar", goals: 0 },
       datetime: "29/11 12h",
       local: "Al Bayt",
       wasPlayed: true
     },
     {
-      cLeft: { name: "Equador", goals: 0 },
-      cRight: { name: "Senegal", goals: 0 },
+      cLeft: { name: "Equador", goals: 1 },
+      cRight: { name: "Senegal", goals: 2 },
       datetime: "29/11 12h",
       local: "Int. Khalifa",
       wasPlayed: true
     },
     {
       cLeft: { name: "Irã", goals: 0 },
-      cRight: { name: "EUA", goals: 0 },
+      cRight: { name: "EUA", goals: 1 },
       datetime: "29/11 16h",
       local: "Al Thumama",
       wasPlayed: true
     },
     {
       cLeft: { name: "Gales", goals: 0 },
-      cRight: { name: "Inglaterra", goals: 0 },
+      cRight: { name: "Inglaterra", goals: 3 },
       datetime: "29/11 16h",
       local: "Ahmad Bin Ali",
       wasPlayed: true
     },
     {
       cLeft: { name: "Polônia", goals: 0 },
-      cRight: { name: "Argentina", goals: 0 },
+      cRight: { name: "Argentina", goals: 2 },
       datetime: "30/11 16h",
       local: "Estádio 974",
-      wasPlayed: false
+      wasPlayed: true
     },
     {
-      cLeft: { name: "México", goals: 0 },
-      cRight: { name: "Polônia", goals: 0 },
+      cLeft: { name: "Arábia Saudita", goals: 1 },
+      cRight: { name: "México", goals: 2 },
       datetime: "30/11 16h",
       local: "Lusail",
-      wasPlayed: false
+      wasPlayed: true
     },
     {
-      cLeft: { name: "Tunísia", goals: 0 },
+      cLeft: { name: "Tunísia", goals: 1 },
       cRight: { name: "França", goals: 0 },
       datetime: "30/11 12h",
       local: "Cid. Educação",
-      wasPlayed: false
+      wasPlayed: true
     },
     {
-      cLeft: { name: "Austrália", goals: 0 },
+      cLeft: { name: "Austrália", goals: 1 },
       cRight: { name: "Dinamarca", goals: 0 },
       datetime: "30/11 12h",
       local: "Al Janoub",
-      wasPlayed: false
+      wasPlayed: true
     },
     {
       cLeft: { name: "Japão", goals: 0 },
