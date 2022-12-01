@@ -4,7 +4,7 @@ const sixteens = {
       cLeft: { name: "Holanda", goals: 0 },
       cRight: { name: "EUA", goals: 0 },
       datetime: "03/12 12h",
-      local: "Int. Khalifa",
+      local: "Khalifa Int.",
       wasPlayed: false
     },
     {
@@ -39,21 +39,21 @@ const sixteens = {
       cLeft: { name: "", goals: 0 },
       cRight: { name: "", goals: 0 },
       datetime: "05/12 16h",
-      local: "Estádio 974",
+      local: "974 Stadium",
       wasPlayed: false
     },
     {
       cLeft: { name: "", goals: 0 },
       cRight: { name: "", goals: 0 },
       datetime: "06/12 12h",
-      local: "Cid. Educação",
+      local: "Ed. City",
       wasPlayed: false
     },
     {
       cLeft: { name: "", goals: 0 },
       cRight: { name: "", goals: 0 },
       datetime: "06/12 16h",
-      local: "Lusail",
+      local: "Lusail Stadium",
       wasPlayed: false
     }
   ]

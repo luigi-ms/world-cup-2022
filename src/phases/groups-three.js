@@ -11,7 +11,7 @@ const groupsThree = {
       cLeft: { name: "Equador", goals: 1 },
       cRight: { name: "Senegal", goals: 2 },
       datetime: "29/11 12h",
-      local: "Int. Khalifa",
+      local: "Khalifa Int.",
       wasPlayed: true
     },
     {
@@ -32,7 +32,7 @@ const groupsThree = {
       cLeft: { name: "Tunísia", goals: 1 },
       cRight: { name: "França", goals: 0 },
       datetime: "30/11 12h",
-      local: "Cid. Educação",
+      local: "Ed. City",
       wasPlayed: true
     },
     {
@@ -46,14 +46,14 @@ const groupsThree = {
       cLeft: { name: "Polônia", goals: 0 },
       cRight: { name: "Argentina", goals: 2 },
       datetime: "30/11 16h",
-      local: "Estádio 974",
+      local: "974 Stadium",
       wasPlayed: true
     },
     {
       cLeft: { name: "Arábia Saudita", goals: 1 },
       cRight: { name: "México", goals: 2 },
       datetime: "30/11 16h",
-      local: "Lusail",
+      local: "Lusail Stadium",
       wasPlayed: true
     },
     {
@@ -74,7 +74,7 @@ const groupsThree = {
       cLeft: { name: "Japão", goals: 0 },
       cRight: { name: "Espanha", goals: 0 },
       datetime: "01/12 16h",
-      local: "Int. Khalifa",
+      local: "Khalifa Int.",
       wasPlayed: false
     },
     {
@@ -88,7 +88,7 @@ const groupsThree = {
       cLeft: { name: "Coreia do Sul", goals: 0 },
       cRight: { name: "Portugal", goals: 0 },
       datetime: "02/12 12h",
-      local: "Cid. Educação",
+      local: "Ed. City",
       wasPlayed: false
     },
     {
@@ -102,14 +102,14 @@ const groupsThree = {
       cLeft: { name: "Camarões", goals: 0 },
       cRight: { name: "Brasil", goals: 0 },
       datetime: "02/12 16h",
-      local: "Lusail",
+      local: "Lusail Stadium",
       wasPlayed: false
     },
     {
       cLeft: { name: "Sérvia", goals: 2 },
       cRight: { name: "Suíça", goals: 0 },
       datetime: "02/12 16h",
-      local: "Estádio 974",
+      local: "974 Stadium",
       wasPlayed: false
     }
   ]

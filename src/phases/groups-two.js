@@ -18,7 +18,7 @@ const groupsTwo = {
       cLeft: { name: "Holanda", goals: 1 },
       cRight: { name: "Equador", goals: 1 },
       datetime: "25/11 13h",
-      local: "Int. Khalifa",
+      local: "Khalifa Int.",
       wasPlayed: true
     },
     {
@@ -39,21 +39,21 @@ const groupsTwo = {
       cLeft: { name: "Polônia", goals: 2 },
       cRight: { name: "Arábia Saudita", goals: 0 },
       datetime: "26/11 10h",
-      local: "Cid. Educação",
+      local: "Ed. City",
       wasPlayed: true
     },
     {
       cLeft: { name: "França", goals: 2 },
       cRight: { name: "Dinamarca", goals: 1 },
       datetime: "26/11 13h",
-      local: "Estádio 974",
+      local: "974 Stadium",
       wasPlayed: true
     },
     {
       cLeft: { name: "Argentina", goals: 2 },
       cRight: { name: "México", goals: 0 },
       datetime: "26/11 16h",
-      local: "Lusail",
+      local: "Lusail Stadium",
       wasPlayed: true
     },
     {
@@ -74,7 +74,7 @@ const groupsTwo = {
       cLeft: { name: "Croácia", goals: 4 },
       cRight: { name: "Canadá", goals: 1 },
       datetime: "27/11 13h",
-      local: "Int. Khalifa",
+      local: "Khalifa Int.",
       wasPlayed: true
     },
     {
@@ -95,21 +95,21 @@ const groupsTwo = {
       cLeft: { name: "Coreia do Sul", goals: 2 },
       cRight: { name: "Gana", goals: 3 },
       datetime: "28/11 10h",
-      local: "Cid. Educação",
+      local: "Ed. City",
       wasPlayed: true
     },
     {
       cLeft: { name: "Brasil", goals: 1 },
       cRight: { name: "Suíça", goals: 0 },
       datetime: "28/11 13h",
-      local: "Estádio 974",
+      local: "974 Stadium",
       wasPlayed: true
     },
     {
       cLeft: { name: "Portugal", goals: 2 },
       cRight: { name: "Uruguai", goals: 0 },
       datetime: "28/11 16h",
-      local: "Lusail",
+      local: "Lusail Stadium",
       wasPlayed: true
     }
   ]

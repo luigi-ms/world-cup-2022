@@ -4,7 +4,7 @@ const semis = {
       cLeft: { name: "", goals: 0 },
       cRight: { name: "", goals: 0 },
       datetime: "13/12 16h",
-      local: "Lusail",
+      local: "Lusail Stadium",
       wasPlayed: false
     },
     {
@@ -23,14 +23,14 @@ const finals = {
       cLeft: { name: "", goals: 0 },
       cRight: { name: "", goals: 0 },
       datetime: "17/12 12h",
-      local: "Int. Khalifa",
+      local: "Khalifa Int.",
       wasPlayed: false
     },
     {
       cLeft: { name: "", goals: 0 },
       cRight: { name: "", goals: 0 },
       datetime: "18/12 12h",
-      local: "Lusail",
+      local: "Lusail Stadium",
       wasPlayed: false
     },
   ]

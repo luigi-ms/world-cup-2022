@@ -4,14 +4,14 @@ const quarter = {
       cLeft: { name: "", goals: 0 },
       cRight: { name: "", goals: 0 },
       datetime: "09/12 12h",
-      local: "Cid. Educação",
+      local: "Ed. City",
       wasPlayed: false
     },
     {
       cLeft: { name: "", goals: 0 },
       cRight: { name: "", goals: 0 },
       datetime: "09/12 16h",
-      local: "Lusail",
+      local: "Lusail Stadium",
       wasPlayed: false
     },
     {
