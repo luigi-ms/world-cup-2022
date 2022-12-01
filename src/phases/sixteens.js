@@ -29,7 +29,7 @@ const sixteens = {
       wasPlayed: false
     },
     {
-      cLeft: { name: "", goals: 0 },
+      cLeft: { name: "Japão", goals: 0 },
       cRight: { name: "Croácia", goals: 0 },
       datetime: "05/12 12h",
       local: "Al Janoub",
@@ -44,7 +44,7 @@ const sixteens = {
     },
     {
       cLeft: { name: "Marrocos", goals: 0 },
-      cRight: { name: "", goals: 0 },
+      cRight: { name: "Espanha", goals: 0 },
       datetime: "06/12 12h",
       local: "Ed. City",
       wasPlayed: false
