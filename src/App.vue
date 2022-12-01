@@ -52,6 +52,11 @@ export default {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap');
+
+* {
+  font-family: 'Lato', 'Arial', sans-serif;
+}
 #tabs {
   font-size: 0.8rem;
   margin-left: 0;

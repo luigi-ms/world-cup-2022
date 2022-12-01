@@ -8,17 +8,17 @@ const groups = {
       wasPlayed: true
     },
     {
-      cLeft: { name: "Senegal", goals: 0 },
-      cRight: { name: "Holanda", goals: 2 },
-      datetime: "21/11 13h",
-      local: "Al Thumama",
-      wasPlayed: true
-    },
-    {
       cLeft: { name: "Inglaterra", goals: 6 },
       cRight: { name: "Irã", goals: 2 },
       datetime: "21/11 10h",
       local: "Int. Khalifa",
+      wasPlayed: true
+    },
+    {
+      cLeft: { name: "Senegal", goals: 0 },
+      cRight: { name: "Holanda", goals: 2 },
+      datetime: "21/11 13h",
+      local: "Al Thumama",
       wasPlayed: true
     },
     {
@@ -36,13 +36,6 @@ const groups = {
       wasPlayed: true
     },
     {
-      cLeft: { name: "México", goals: 0 },
-      cRight: { name: "Polônia", goals: 0 },
-      datetime: "22/11 13h",
-      local: "Estádio 974",
-      wasPlayed: true
-    },
-    {
       cLeft: { name: "Dinamarca", goals: 0 },
       cRight: { name: "Tunísia", goals: 0 },
       datetime: "22/11 10h",
@@ -50,10 +43,24 @@ const groups = {
       wasPlayed: true
     },
     {
+      cLeft: { name: "México", goals: 0 },
+      cRight: { name: "Polônia", goals: 0 },
+      datetime: "22/11 13h",
+      local: "Estádio 974",
+      wasPlayed: true
+    },
+    {
       cLeft: { name: "França", goals: 4 },
       cRight: { name: "Austrália", goals: 1 },
       datetime: "22/11 16h",
       local: "Al Janoub",
+      wasPlayed: true
+    },
+    {
+      cLeft: { name: "Marrocos", goals: 0 },
+      cRight: { name: "Croácia", goals: 0 },
+      datetime: "23/11 07h",
+      local: "Al Bayt",
       wasPlayed: true
     },
     {
@@ -71,13 +78,6 @@ const groups = {
       wasPlayed: true
     },
     {
-      cLeft: { name: "Marrocos", goals: 0 },
-      cRight: { name: "Croácia", goals: 0 },
-      datetime: "23/11 07h",
-      local: "Al Bayt",
-      wasPlayed: true
-    },
-    {
       cLeft: { name: "Bélgica", goals: 1 },
       cRight: { name: "Canadá", goals: 0 },
       datetime: "23/11 16h",
@@ -92,13 +92,6 @@ const groups = {
       wasPlayed: true
     },
     {
-      cLeft: { name: "Brasil", goals: 2 },
-      cRight: { name: "Sérvia", goals: 0 },
-      datetime: "24/11 16h",
-      local: "Lusail",
-      wasPlayed: true
-    },
-    {
       cLeft: { name: "Uruguai", goals: 0 },
       cRight: { name: "Coreia do Sul", goals: 0 },
       datetime: "24/11 10h",
@@ -110,6 +103,13 @@ const groups = {
       cRight: { name: "Gana", goals: 2 },
       datetime: "24/11 13h",
       local: "Estádio 974",
+      wasPlayed: true
+    },
+    {
+      cLeft: { name: "Brasil", goals: 2 },
+      cRight: { name: "Sérvia", goals: 0 },
+      datetime: "24/11 16h",
+      local: "Lusail",
       wasPlayed: true
     }
   ]

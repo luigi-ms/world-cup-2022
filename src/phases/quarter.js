@@ -3,13 +3,6 @@ const quarter = {
     {
       cLeft: { name: "", goals: 0 },
       cRight: { name: "", goals: 0 },
-      datetime: "09/12 16h",
-      local: "Lusail",
-      wasPlayed: false
-    },
-    {
-      cLeft: { name: "", goals: 0 },
-      cRight: { name: "", goals: 0 },
       datetime: "09/12 12h",
       local: "Cid. Educação",
       wasPlayed: false
@@ -17,8 +10,8 @@ const quarter = {
     {
       cLeft: { name: "", goals: 0 },
       cRight: { name: "", goals: 0 },
-      datetime: "10/12 16h",
-      local: "Al Bayt",
+      datetime: "09/12 16h",
+      local: "Lusail",
       wasPlayed: false
     },
     {
@@ -28,6 +21,13 @@ const quarter = {
       local: "Al Thumama",
       wasPlayed: false
     },
+    {
+      cLeft: { name: "", goals: 0 },
+      cRight: { name: "", goals: 0 },
+      datetime: "10/12 16h",
+      local: "Al Bayt",
+      wasPlayed: false
+    }
   ]
 };
 

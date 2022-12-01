@@ -29,20 +29,6 @@ const groupsThree = {
       wasPlayed: true
     },
     {
-      cLeft: { name: "Polônia", goals: 0 },
-      cRight: { name: "Argentina", goals: 2 },
-      datetime: "30/11 16h",
-      local: "Estádio 974",
-      wasPlayed: true
-    },
-    {
-      cLeft: { name: "Arábia Saudita", goals: 1 },
-      cRight: { name: "México", goals: 2 },
-      datetime: "30/11 16h",
-      local: "Lusail",
-      wasPlayed: true
-    },
-    {
       cLeft: { name: "Tunísia", goals: 1 },
       cRight: { name: "França", goals: 0 },
       datetime: "30/11 12h",
@@ -57,18 +43,18 @@ const groupsThree = {
       wasPlayed: true
     },
     {
-      cLeft: { name: "Japão", goals: 0 },
-      cRight: { name: "Espanha", goals: 0 },
-      datetime: "01/12 16h",
-      local: "Int. Khalifa",
-      wasPlayed: false
+      cLeft: { name: "Polônia", goals: 0 },
+      cRight: { name: "Argentina", goals: 2 },
+      datetime: "30/11 16h",
+      local: "Estádio 974",
+      wasPlayed: true
     },
     {
-      cLeft: { name: "Costa Rica", goals: 0 },
-      cRight: { name: "Alemanha", goals: 0 },
-      datetime: "01/12 16h",
-      local: "Al Bayt",
-      wasPlayed: false
+      cLeft: { name: "Arábia Saudita", goals: 1 },
+      cRight: { name: "México", goals: 2 },
+      datetime: "30/11 16h",
+      local: "Lusail",
+      wasPlayed: true
     },
     {
       cLeft: { name: "Croácia", goals: 0 },
@@ -85,17 +71,17 @@ const groupsThree = {
       wasPlayed: false
     },
     {
-      cLeft: { name: "Camarões", goals: 0 },
-      cRight: { name: "Brasil", goals: 0 },
-      datetime: "02/12 16h",
-      local: "Lusail",
+      cLeft: { name: "Japão", goals: 0 },
+      cRight: { name: "Espanha", goals: 0 },
+      datetime: "01/12 16h",
+      local: "Int. Khalifa",
       wasPlayed: false
     },
     {
-      cLeft: { name: "Sérvia", goals: 2 },
-      cRight: { name: "Suíça", goals: 0 },
-      datetime: "02/12 16h",
-      local: "Estádio 974",
+      cLeft: { name: "Costa Rica", goals: 0 },
+      cRight: { name: "Alemanha", goals: 0 },
+      datetime: "01/12 16h",
+      local: "Al Bayt",
       wasPlayed: false
     },
     {
@@ -110,6 +96,20 @@ const groupsThree = {
       cRight: { name: "Uruguai", goals: 0 },
       datetime: "02/12 12h",
       local: "Al Janoub",
+      wasPlayed: false
+    },
+    {
+      cLeft: { name: "Camarões", goals: 0 },
+      cRight: { name: "Brasil", goals: 0 },
+      datetime: "02/12 16h",
+      local: "Lusail",
+      wasPlayed: false
+    },
+    {
+      cLeft: { name: "Sérvia", goals: 2 },
+      cRight: { name: "Suíça", goals: 0 },
+      datetime: "02/12 16h",
+      local: "Estádio 974",
       wasPlayed: false
     }
   ]
