@@ -16,7 +16,7 @@ const sixteens = {
     },
     {
       cLeft: { name: "França", goals: 0 },
-      cRight: { name: "Polõnia", goals: 0 },
+      cRight: { name: "Polônia", goals: 0 },
       datetime: "04/12 12h",
       local: "Al Thumama",
       wasPlayed: false
