@@ -61,14 +61,14 @@ const groupsThree = {
       cRight: { name: "Bélgica", goals: 0 },
       datetime: "01/12 12h",
       local: "Ahmad Bin Ali",
-      wasPlayed: false
+      wasPlayed: true
     },
     {
-      cLeft: { name: "Canadá", goals: 0 },
-      cRight: { name: "Marrocos", goals: 0 },
+      cLeft: { name: "Canadá", goals: 1 },
+      cRight: { name: "Marrocos", goals: 2 },
       datetime: "01/11 12h",
       local: "Al Thumama",
-      wasPlayed: false
+      wasPlayed: true
     },
     {
       cLeft: { name: "Japão", goals: 0 },
