@@ -99,18 +99,18 @@ const groupsThree = {
       wasPlayed: true
     },
     {
-      cLeft: { name: "Camarões", goals: 0 },
+      cLeft: { name: "Camarões", goals: 1 },
       cRight: { name: "Brasil", goals: 0 },
       datetime: "02/12 16h",
       local: "Lusail Stadium",
-      wasPlayed: false
+      wasPlayed: true
     },
     {
       cLeft: { name: "Sérvia", goals: 2 },
-      cRight: { name: "Suíça", goals: 2 },
+      cRight: { name: "Suíça", goals: 3 },
       datetime: "02/12 16h",
       local: "974 Stadium",
-      wasPlayed: false
+      wasPlayed: true
     }
   ]
 }
