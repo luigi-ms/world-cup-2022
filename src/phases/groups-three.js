@@ -85,18 +85,18 @@ const groupsThree = {
       wasPlayed: true
     },
     {
-      cLeft: { name: "Coreia do Sul", goals: 1 },
+      cLeft: { name: "Coreia do Sul", goals: 2 },
       cRight: { name: "Portugal", goals: 1 },
       datetime: "02/12 12h",
       local: "Ed. City",
-      wasPlayed: false
+      wasPlayed: true
     },
     {
       cLeft: { name: "Gana", goals: 0 },
       cRight: { name: "Uruguai", goals: 2 },
       datetime: "02/12 12h",
       local: "Al Janoub",
-      wasPlayed: false
+      wasPlayed: true
     },
     {
       cLeft: { name: "Camarões", goals: 0 },
