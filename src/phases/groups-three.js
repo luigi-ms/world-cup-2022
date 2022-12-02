@@ -107,7 +107,7 @@ const groupsThree = {
     },
     {
       cLeft: { name: "Sérvia", goals: 2 },
-      cRight: { name: "Suíça", goals: 0 },
+      cRight: { name: "Suíça", goals: 2 },
       datetime: "02/12 16h",
       local: "974 Stadium",
       wasPlayed: false
