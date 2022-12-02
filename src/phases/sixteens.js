@@ -36,7 +36,7 @@ const sixteens = {
       wasPlayed: false
     },
     {
-      cLeft: { name: "", goals: 0 },
+      cLeft: { name: "Brasil", goals: 0 },
       cRight: { name: "Coreia do Sul", goals: 0 },
       datetime: "05/12 16h",
       local: "974 Stadium",
@@ -51,7 +51,7 @@ const sixteens = {
     },
     {
       cLeft: { name: "Portugal", goals: 0 },
-      cRight: { name: "", goals: 0 },
+      cRight: { name: "Suíça", goals: 0 },
       datetime: "06/12 16h",
       local: "Lusail Stadium",
       wasPlayed: false
