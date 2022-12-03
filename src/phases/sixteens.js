@@ -1,7 +1,7 @@
 const sixteens = {
   matches: [
     {
-      cLeft: { name: "Holanda", goals: 0 },
+      cLeft: { name: "Holanda", goals: 2 },
       cRight: { name: "EUA", goals: 0 },
       datetime: "03/12 12h",
       local: "Khalifa Int.",
