@@ -9,7 +9,7 @@ const quarter = {
     },
     {
       cLeft: { name: "Holanda", goals: 0 },
-      cRight: { name: "", goals: 0 },
+      cRight: { name: "Argentina", goals: 0 },
       datetime: "09/12 16h",
       local: "Lusail Stadium",
       wasPlayed: false
