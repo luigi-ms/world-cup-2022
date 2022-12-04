@@ -15,11 +15,11 @@ const sixteens = {
       wasPlayed: true
     },
     {
-      cLeft: { name: "França", goals: 0 },
-      cRight: { name: "Polônia", goals: 0 },
+      cLeft: { name: "França", goals: 3 },
+      cRight: { name: "Polônia", goals: 1 },
       datetime: "04/12 12h",
       local: "Al Thumama",
-      wasPlayed: false
+      wasPlayed: true
     },
     {
       cLeft: { name: "Inglaterra", goals: 0 },
