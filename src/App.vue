@@ -12,22 +12,27 @@
           dark>
           <v-tab>
             <router-link to="/">
-              Grupos
+              <span class="link">Grupos</span>
             </router-link>
           </v-tab>
           <v-tab>
             <router-link to="/round-16">
-              Oitavas
+              <span class="link">Oitavas</span>
             </router-link>
           </v-tab>
           <v-tab>
             <router-link to="/quarter">
-              Quartas
+              <span class="link">Quartas</span>
             </router-link>
           </v-tab>
           <v-tab>
             <router-link to="/semi-and-final">
-              Semi e Final
+              <span class="link">Semi e Final</span>
+            </router-link>
+          </v-tab>
+          <v-tab>
+            <router-link to="/map-and-table">
+              <span class="link">Chaveamento e Tabela</span>
             </router-link>
           </v-tab>
         </v-tabs>
@@ -62,7 +67,7 @@ export default {
   margin-left: 0;
 }
 
-a {
-  text-decoration: none;
-}
+a { text-decoration: none; }
+
+.link { color: white; }
 </style>

@@ -4,6 +4,7 @@ import GroupsView from '../views/GroupsView.vue';
 import RoundOf16 from '../views/Round16View.vue';
 import QuarterFinal from '../views/QuarterFinal.vue';
 import SemiAndFinal from '../views/SemiAndFinal.vue';
+import MapAndTable from '../views/MapAndTable.vue';
 
 Vue.use(VueRouter);
 
@@ -31,6 +32,11 @@ const routes = [
     path: '/semi-and-final',
     name: 'semiAndFinal',
     component: SemiAndFinal
+  },
+  {
+    path: '/map-and-table',
+    name: 'mapAndTable',
+    component: MapAndTable
   }
 ];
 
