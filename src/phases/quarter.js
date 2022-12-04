@@ -22,7 +22,7 @@ const quarter = {
       wasPlayed: false
     },
     {
-      cLeft: { name: "", goals: 0 },
+      cLeft: { name: "Inglaterra", goals: 0 },
       cRight: { name: "França", goals: 0 },
       datetime: "10/12 16h",
       local: "Al Bayt",

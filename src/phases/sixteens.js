@@ -22,11 +22,11 @@ const sixteens = {
       wasPlayed: true
     },
     {
-      cLeft: { name: "Inglaterra", goals: 0 },
+      cLeft: { name: "Inglaterra", goals: 3 },
       cRight: { name: "Senegal", goals: 0 },
       datetime: "04/12 16h",
       local: "Al Bayt",
-      wasPlayed: false
+      wasPlayed: true
     },
     {
       cLeft: { name: "Japão", goals: 0 },
