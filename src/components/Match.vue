@@ -59,8 +59,6 @@
 </template>
 
 <script>
-import countries from '../countries.js';
-
 export default {
   name: "MatchBox",
   data: () => {
@@ -68,7 +66,8 @@ export default {
       date: "00/00",
       hour: "00",
       leftWon: false,
-      rightWon: false
+      rightWon: false,
+      countries: {}
     }
   },
   props: {
@@ -97,6 +96,12 @@ export default {
       default: false
     }
   },
+  beforeMount(){
+    fetch('/data/countries.json')
+      .then(res => res.json())
+      .then(json => this.countries = json)
+      .catch(() => console.error("Error on get countries"));
+  },
   mounted(){
     this.date = this.datetime.substr(0, 5);
     this.hour = this.datetime.substr(6);
@@ -106,13 +111,12 @@ export default {
     }else if(this.wasPlayed && (this.countryLeft.goals < this.countryRight.goals)){
       this.rightWon = true;
     }
-    console.log(this.countryLeft);
   },
   methods: {
     getFlag(countryName){
       if(countryName === "") return "";
 
-      const abrev = countries[countryName];
+      const abrev = this.countries[countryName];
 
       return (abrev !== "ESP") 
         ? require('../assets/'+abrev+'.png')
