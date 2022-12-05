@@ -25,16 +25,24 @@
 
 <script>
   import MatchList from '../components/MatchList';
-  import { semis, finals } from '../phases/semi-final.js';
 
   export default {
     name: 'SemiAndFinal',
     components: { MatchList },
     data: () => {
       return {
-        semis: semis.matches,
-        finals: finals.matches
+        semis: [],
+        finals: []
       }
+    },
+    mounted(){
+      fetch('/data/groups-one.json')
+        .then(res => res.json())
+        .then(json => {
+          this.semis = json.semiMatches;
+          this.finals = json.finalsMatches;
+        })
+        .catch(rej => console.error(rej));
     }
   }
 </script>

@@ -15,15 +15,20 @@
 
 <script>
   import MatchList from '../components/MatchList';
-  import sixteens from '../phases/sixteens.js';
 
   export default {
     name: 'RoundOf16',
     components: { MatchList },
     data: () => {
       return {
-        sixteens: sixteens.matches
+        sixteens: []
       }
+    },
+    mounted(){
+      fetch('/data/sixteens.json')
+        .then(res => res.json())
+        .then(json => this.sixteens = json.matches)
+        .catch(rej => console.error(rej));
     }
   }
 </script>

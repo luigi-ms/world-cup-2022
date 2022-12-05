@@ -11,8 +11,8 @@
       </v-col>
       <v-col md=10 id="roundSelect">
         <v-pagination v-model="roundPage"
-          value=Number(roundPage)
-          :length=Number(3)
+          :value="roundPage"
+          length="3"
           circle></v-pagination>
       </v-col>
     </v-row>
@@ -30,9 +30,6 @@
 
 <script>
   import MatchList from '../components/MatchList.vue'
-  import groups from '../phases/groups-one.js';
-  import groupsTwo from '../phases/groups-two.js';
-  import groupsThree from '../phases/groups-three.js';
   
   export default {
     name: 'GroupsView',
@@ -40,11 +37,11 @@
     data: () => {
       return {
         roundPage: 0,
-        roundOne: groups.matches,
+        roundOne: [],
         showOne: true,
-        roundTwo: groupsTwo.matches,
+        roundTwo: [],
         showTwo: false,
-        roundThree: groupsThree.matches,
+        roundThree: [],
         showThree: false
       }
     },
@@ -66,7 +63,21 @@
       }
     },
     mounted(){
-      this.roundMatchList = groups.matches;
+      fetch('/data/groups-one.json')
+        .then(res => res.json())
+        .then(json => this.roundOne = json.matches)
+        .catch(rej => console.error(rej));
+
+      fetch('/data/groups-two.json')
+        .then(res => res.json())
+        .then(json => this.roundTwo = json.matches)
+        .catch(rej => console.error(rej));
+
+      fetch('/data/groups-three.json')
+        .then(res => res.json())
+        .then(json => this.roundThree = json.matches)
+        .catch(rej => console.error(rej));
+
       this.roundPage = 1;
     }
   }

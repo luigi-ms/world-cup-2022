@@ -1,0 +1,29 @@
+{
+  "sixteens1": [
+    { "cLeft": "Brasil", "cRight": "Coréia do Sul" },
+    { "cLeft": "Japão", "cRight": "Croácia" },
+    { "cLeft": "Argentina", "cRight": "Austrália" },
+    { "cLeft": "Holanda", "cRight": "EUA" }
+  ],
+  "sixteens2": [
+    { "cLeft": "Portugal", "cRight": "Suíça" },
+    { "cLeft": "Marrocos", "cRight": "Espanha" },
+    { "cLeft": "França", "cRight": "Polônia" },
+    { "cLeft": "Inglaterra", "cRight": "Senegal" }
+  ],
+  "quarter1": [
+    { "cLeft": "", "cRight": "" },
+    { "cLeft": "Holanda", "cRight": "Argentina" }
+  ],
+  "quarter2": [
+    { "cLeft": "", "cRight": "" },
+    { "cLeft": "Inglaterra", "cRight": "França" }
+  ],
+  "semifinals": [
+    { "cLeft": "", "cRight": "" },
+    { "cLeft": "", "cRight": "" }
+  ],
+  "finals": [
+    { "cLeft": "", "cRight": "" }
+  ]
+}

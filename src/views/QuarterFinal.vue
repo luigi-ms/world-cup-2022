@@ -15,15 +15,20 @@
 
 <script>
   import MatchList from '../components/MatchList';
-  import quarter from '../phases/quarter.js';
 
   export default {
     name: 'QuarterFinalView',
     components: { MatchList },
     data: () => {
       return {
-        quarters: quarter.matches
+        quarters: []
       }
+    },
+    mounted(){
+      fetch('/data/quarter.json')
+        .then(res => res.json())
+        .then(json => this.quarters = json.matches)
+        .catch(rej => console.error(rej));
     }
   }
 </script>

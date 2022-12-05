@@ -4,7 +4,11 @@
       <v-col cols="12" md="6" lg="4" xl="4"
         v-for="m in matches" 
         :key="m.datetime">
-        <v-skeleton-loader v-show="loading" type="image"/>
+        <v-skeleton-loader 
+          v-show="loading" 
+          v-for="n in empty"
+          :key="n"
+          type="image"/>
         <match-box v-show="!loading"
           :countryLeft="m.cLeft"
           :countryRight="m.cRight"
@@ -24,15 +28,16 @@
     name: 'MatchList',
     components: { MatchBox },
     data: () => {
-      return { loading: true };
+      return { 
+        loading: true,
+        empty: [0, 0, 0, 0, 0, 0, 0, 0]
+      };
     },
     props: {
       matches: Array
     },
     mounted(){
-      setTimeout(() => {
-        this.loading = false;
-      }, 2000);
+      
     }
   };
 </script>
