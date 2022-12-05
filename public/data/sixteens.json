@@ -1,59 +1,131 @@
 {
   "matches": [
     {
-      "cLeft": { "name": "Holanda", "goals": 3 },
-      "cRight": { "name": "EUA", "goals": 1 },
+      "cLeft": { 
+        "name": "Holanda", 
+        "goals": 3,
+        "penalty": 0
+      },
+      "cRight": { 
+        "name": "EUA", 
+        "goals": 1,
+        "penalty": 0
+      },
       "datetime": "03/12 12h",
       "local": "Khalifa Int.",
+      "penaltyEnding": false,
       "wasPlayed": true
     },
     {
-      "cLeft": { "name": "Argentina", "goals": 2 },
-      "cRight": { "name": "Austrália", "goals": 1 },
+      "cLeft": { 
+        "name": "Argentina", 
+        "goals": 2,
+        "penalty": 0
+      },
+      "cRight": { 
+        "name": "Austrália", 
+        "goals": 1,
+        "penalty": 0
+      },
       "datetime": "03/12 16h",
       "local": "Ahmad Bin Ali",
+      "penaltyEnding": false,
       "wasPlayed": true
     },
     {
-      "cLeft": { "name": "França", "goals": 3 },
-      "cRight": { "name": "Polônia", "goals": 1 },
+      "cLeft": { 
+        "name": "França", 
+        "goals": 3,
+        "penalty": 0
+      },
+      "cRight": { 
+        "name": "Polônia", 
+        "goals": 1,
+        "penalty": 0
+      },
       "datetime": "04/12 12h",
       "local": "Al Thumama",
+      "penaltyEnding": false,
       "wasPlayed": true
     },
     {
-      "cLeft": { "name": "Inglaterra", "goals": 3 },
-      "cRight": { "name": "Senegal", "goals": 0 },
+      "cLeft": { 
+        "name": "Inglaterra", 
+        "goals": 3,
+        "penalty": 0
+      },
+      "cRight": { 
+        "name": "Senegal", 
+        "goals": 0,
+        "penalty": 0
+      },
       "datetime": "04/12 16h",
       "local": "Al Bayt",
+      "penaltyEnding": false,
       "wasPlayed": true
     },
     {
-      "cLeft": { "name": "Japão", "goals": 1 },
-      "cRight": { "name": "Croácia", "goals": 1 },
+      "cLeft": { 
+        "name": "Japão", 
+        "goals": 1, 
+        "penalty": 1
+      },
+      "cRight": { 
+        "name": "Croácia", 
+        "goals": 1 ,
+        "penalty": 3
+      },
       "datetime": "05/12 12h",
       "local": "Al Janoub",
+      "penaltyEnding": true,
       "wasPlayed": true
     },
     {
-      "cLeft": { "name": "Brasil", "goals": 4 },
-      "cRight": { "name": "Coreia do Sul", "goals": 1 },
+      "cLeft": { 
+        "name": "Brasil", 
+        "goals": 4,
+        "penalty": 0
+      },
+      "cRight": { 
+        "name": "Coreia do Sul", 
+        "goals": 1,
+        "penalty": 0
+      },
       "datetime": "05/12 16h",
       "local": "974 Stadium",
+      "penaltyEnding": false,
       "wasPlayed": true
     },
     {
-      "cLeft": { "name": "Marrocos", "goals": 0 },
-      "cRight": { "name": "Espanha", "goals": 0 },
+      "cLeft": { 
+        "name": "Marrocos", 
+        "goals": 0,
+        "penalty": 0
+      },
+      "cRight": { 
+        "name": "Espanha", 
+        "goals": 0,
+        "penalty": 0
+      },
       "datetime": "06/12 12h",
       "local": "Ed. City",
+      "penaltyEnding": false,
       "wasPlayed": false
     },
     {
-      "cLeft": { "name": "Portugal", "goals": 0 },
-      "cRight": { "name": "Suíça", "goals": 0 },
+      "cLeft": { 
+        "name": "Portugal", 
+        "goals": 0,
+        "penalty": 0 
+      },
+      "cRight": { 
+        "name": "Suíça", 
+        "goals": 0,
+        "penalty": 0 
+      },
       "datetime": "06/12 16h",
       "local": "Lusail Stadium",
+      "penaltyEnding": false,
       "wasPlayed": false
     }
   ]

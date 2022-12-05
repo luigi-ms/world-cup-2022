@@ -1,31 +1,67 @@
 {
   "matches": [
     {
-      "cLeft": { "name": "Croácia", "goals": 0 },
-      "cRight": { "name": "Brasil", "goals": 0 },
+      "cLeft": { 
+        "name": "Croácia", 
+        "goals": 0,
+        "penalty": 0
+      },
+      "cRight": { 
+        "name": "Brasil", 
+        "goals": 0,
+        "penalty": 0
+       },
       "datetime": "09/12 12h",
       "local": "Ed. City",
+      "penaltyEnding": false,
       "wasPlayed": false
     },
     {
-      "cLeft": { "name": "Holanda", "goals": 0 },
-      "cRight": { "name": "Argentina", "goals": 0 },
+      "cLeft": { 
+        "name": "Holanda", 
+        "goals": 0,
+        "penalty": 0
+       },
+      "cRight": { 
+        "name": "Argentina", 
+        "goals": 0,
+        "penalty": 0
+       },
       "datetime": "09/12 16h",
       "local": "Lusail Stadium",
+      "penaltyEnding": false,
       "wasPlayed": false
     },
     {
-      "cLeft": { "name": "", "goals": 0 },
-      "cRight": { "name": "", "goals": 0 },
+      "cLeft": { 
+        "name": "", 
+        "goals": 0,
+        "penalty": 0
+       },
+      "cRight": { 
+        "name": "", 
+        "goals": 0,
+        "penalty": 0
+       },
       "datetime": "10/12 12h",
       "local": "Al Thumama",
+      "penaltyEnding": false,
       "wasPlayed": false
     },
     {
-      "cLeft": { "name": "Inglaterra", "goals": 0 },
-      "cRight": { "name": "França", "goals": 0 },
+      "cLeft": { 
+        "name": "Inglaterra", 
+        "goals": 0,
+        "penalty": 0
+       },
+      "cRight": { 
+        "name": "França", 
+        "goals": 0,
+        "penalty": 0
+       },
       "datetime": "10/12 16h",
       "local": "Al Bayt",
+      "penaltyEnding": false,
       "wasPlayed": false
     }
   ]
