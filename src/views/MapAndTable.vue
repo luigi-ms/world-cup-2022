@@ -2,7 +2,23 @@
   <v-container>
     <v-row>
       <v-col>
+        <h1>Tabela de pontuação</h1>
       </v-col>
+    </v-row>
+    <v-row>
+      <v-col>
+        <v-skeleton-loader type="image"/>
+      </v-col> 
+    </v-row>
+    <v-row>
+      <v-col>
+        <h1>Chaveamento</h1>
+      </v-col>
+    </v-row>
+    <v-row>
+      <v-col>
+        <v-skeleton-loader type="image"/>
+      </v-col> 
     </v-row>
   </v-container>
 </template>

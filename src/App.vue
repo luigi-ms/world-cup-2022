@@ -11,23 +11,8 @@
           background-color="purple darken-3"
           dark>
           <v-tab>
-            <router-link to="/">
-              <span class="link">Grupos</span>
-            </router-link>
-          </v-tab>
-          <v-tab>
-            <router-link to="/round-16">
-              <span class="link">Oitavas</span>
-            </router-link>
-          </v-tab>
-          <v-tab>
-            <router-link to="/quarter">
-              <span class="link">Quartas</span>
-            </router-link>
-          </v-tab>
-          <v-tab>
-            <router-link to="/semi-and-final">
-              <span class="link">Semi e Final</span>
+            <router-link to="/matches">
+              <span class="link">Partidas</span>
             </router-link>
           </v-tab>
           <v-tab>
