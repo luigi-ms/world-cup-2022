@@ -11,23 +11,13 @@
           background-color="purple darken-3"
           dark>
           <v-tab>
-            <router-link to="/">
-              Grupos
+            <router-link to="/matches">
+              <span class="link">Partidas</span>
             </router-link>
           </v-tab>
           <v-tab>
-            <router-link to="/round-16">
-              Oitavas
-            </router-link>
-          </v-tab>
-          <v-tab>
-            <router-link to="/quarter">
-              Quartas
-            </router-link>
-          </v-tab>
-          <v-tab>
-            <router-link to="/semi-and-final">
-              Semi e Final
+            <router-link to="/map-and-table">
+              <span class="link">Chaveamento e Tabela</span>
             </router-link>
           </v-tab>
         </v-tabs>
@@ -62,7 +52,7 @@ export default {
   margin-left: 0;
 }
 
-a {
-  text-decoration: none;
-}
+a { text-decoration: none; }
+
+.link { color: white; }
 </style>

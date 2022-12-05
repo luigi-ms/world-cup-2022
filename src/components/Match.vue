@@ -1,4 +1,5 @@
 <template>
+  <v-sheet elevation="4" rounded>
   <v-container id="round">
     <v-row id="metadata">
       <v-col>
@@ -54,6 +55,7 @@
       </v-col>
     </v-row>
   </v-container>
+  </v-sheet>
 </template>
 
 <script>
@@ -137,7 +139,6 @@ export default {
 
 #round {
   font-family: 'Open Sans', 'Arial', sans-serif;
-  border: 1px solid grey;
   margin-top: 2vh;
 }
 
