@@ -37,10 +37,10 @@
     },
     {
       "cLeft": { "name": "Brasil", "goals": 4 },
-      "cRight": { "name": "Coreia do Sul", "goals": 0 },
+      "cRight": { "name": "Coreia do Sul", "goals": 1 },
       "datetime": "05/12 16h",
       "local": "974 Stadium",
-      "wasPlayed": false
+      "wasPlayed": truee
     },
     {
       "cLeft": { "name": "Marrocos", "goals": 0 },
