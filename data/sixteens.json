@@ -1,4 +1,4 @@
-const sixteens = {
+{
   matches: [
     {
       cLeft: { name: "Holanda", goals: 3 },
@@ -57,6 +57,4 @@ const sixteens = {
       wasPlayed: false
     }
   ]
-};
-
-export default sixteens;
+}

@@ -1,5 +1,5 @@
-const semis = {
-  matches: [
+{
+  semi-matches: [
     {
       cLeft: { name: "", goals: 0 },
       cRight: { name: "", goals: 0 },
@@ -14,11 +14,8 @@ const semis = {
       local: "Al Bayt",
       wasPlayed: false
     }
-  ]
-};
-
-const finals = {
-  matches: [
+  ],
+  finals-matches: [
     {
       cLeft: { name: "", goals: 0 },
       cRight: { name: "", goals: 0 },
@@ -35,5 +32,3 @@ const finals = {
     },
   ]
 };
-
-module.exports = { semis, finals };

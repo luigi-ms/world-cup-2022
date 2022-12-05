@@ -1,4 +1,4 @@
-const quarter = {
+{
   matches: [
     {
       cLeft: { name: "", goals: 0 },
@@ -29,6 +29,4 @@ const quarter = {
       wasPlayed: false
     }
   ]
-};
-
-export default quarter;
+}
