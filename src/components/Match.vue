@@ -1,66 +1,64 @@
 <template>
   <v-sheet elevation="4" rounded>
-  <v-container id="round">
-    <v-row id="metadata">
-      <v-col>
-        <v-icon dense>mdi-calendar-month</v-icon>
-        <span>{{ date+" • "+hour }}</span>
-      </v-col>
-      <v-col>
-        <v-icon dense>mdi-map-marker</v-icon>
-        <span>{{ stadium }}</span>
-      </v-col>
-      <v-col v-if="wasPlayed">
-        <v-icon dense>mdi-check</v-icon>
-        <span>Finalizado</span>
-      </v-col>
-    </v-row>
-    <v-row id="countryNames">
-      <v-col v-if="isNameEmpty()">
-        <v-icon v-if="isNameEmpty()">
-          mdi-flag
-        </v-icon>
-        <span>Team</span>
-      </v-col>
-      <v-col v-else>
-        <v-img
-          class="flag"
-          max-width=30 
-          :src="getFlag(countryLeft.name)"
-          :alt=countryLeft.name></v-img>
-        <span>{{ countryLeft.name }}</span>
-      </v-col>
-      <v-col v-if="isNameEmpty()">
-        <v-icon v-if="isNameEmpty()">
-          mdi-flag
-        </v-icon>
-        <span>Team</span>
-      </v-col>
-      <v-col v-else>
-        <v-img 
-          class="flag"
-          max-width=30 
-          :src="getFlag(countryRight.name)"
-          :alt=countryRight.name></v-img>
-        <span>{{ countryRight.name }}</span>
-      </v-col>
-    </v-row>
-    <v-row id="goals">
-      <v-col :class="(leftWon) ? 'winnerSign' : ''">
-        <span>{{ countryLeft.goals }}</span>
-      </v-col>
-      <v-col :class="(rightWon) ? 'winnerSign' : ''">
-        <span>{{ countryRight.goals }}</span>
-        <span v-if="rightWon" class="winnerSign"></span>
-      </v-col>
-    </v-row>
-  </v-container>
+    <v-container id="round">
+      <v-row id="metadata">
+        <v-col>
+          <v-icon dense>mdi-calendar-month</v-icon>
+          <span>{{ date+" • "+hour }}</span>
+        </v-col>
+        <v-col>
+          <v-icon dense>mdi-map-marker</v-icon>
+          <span>{{ stadium }}</span>
+        </v-col>
+        <v-col v-if="wasPlayed">
+          <v-icon dense>mdi-check</v-icon>
+          <span>Finalizado</span>
+        </v-col>
+      </v-row>
+      <v-row id="countryNames">
+        <v-col v-if="isNameEmpty()">
+          <v-icon v-if="isNameEmpty()">
+            mdi-flag
+          </v-icon>
+          <span>Team</span>
+        </v-col>
+        <v-col v-else>
+          <v-img
+            class="flag"
+            max-width=30 
+            :src="getFlag(countryLeft.name)"
+            :alt=countryLeft.name></v-img>
+          <span>{{ countryLeft.name }}</span>
+        </v-col>
+        <v-col v-if="isNameEmpty()">
+          <v-icon v-if="isNameEmpty()">
+            mdi-flag
+          </v-icon>
+          <span>Team</span>
+        </v-col>
+        <v-col v-else>
+          <v-img 
+            class="flag"
+            max-width=30 
+            :src="getFlag(countryRight.name)"
+            :alt=countryRight.name></v-img>
+          <span>{{ countryRight.name }}</span>
+        </v-col>
+      </v-row>
+      <v-row id="goals">
+        <v-col :class="(leftWon) ? 'winnerSign' : ''">
+          <span>{{ countryLeft.goals }}</span>
+        </v-col>
+        <v-col :class="(rightWon) ? 'winnerSign' : ''">
+          <span>{{ countryRight.goals }}</span>
+          <span v-if="rightWon" class="winnerSign"></span>
+        </v-col>
+      </v-row>
+    </v-container>
   </v-sheet>
 </template>
 
 <script>
-import countries from '../countries.js';
-
 export default {
   name: "MatchBox",
   data: () => {
@@ -68,7 +66,8 @@ export default {
       date: "00/00",
       hour: "00",
       leftWon: false,
-      rightWon: false
+      rightWon: false,
+      countries: {}
     }
   },
   props: {
@@ -97,6 +96,12 @@ export default {
       default: false
     }
   },
+  beforeMount(){
+    fetch('/data/countries.json')
+      .then(res => res.json())
+      .then(json => this.countries = json)
+      .catch(() => console.error("Error on get countries"));
+  },
   mounted(){
     this.date = this.datetime.substr(0, 5);
     this.hour = this.datetime.substr(6);
@@ -106,13 +111,12 @@ export default {
     }else if(this.wasPlayed && (this.countryLeft.goals < this.countryRight.goals)){
       this.rightWon = true;
     }
-    console.log(this.countryLeft);
   },
   methods: {
     getFlag(countryName){
       if(countryName === "") return "";
 
-      const abrev = countries[countryName];
+      const abrev = this.countries[countryName];
 
       return (abrev !== "ESP") 
         ? require('../assets/'+abrev+'.png')

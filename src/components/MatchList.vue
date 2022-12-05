@@ -42,13 +42,4 @@
 </script>
 
 <style scoped>
-@media (max-width: 0px;){}
-
-#matchlist {
-  display: flex;
-  flex-direction: column;
-  margin-top: 1vh;
-  margin-left: 2vw;
-  margin-right: 2vw;
-}
 </style>
