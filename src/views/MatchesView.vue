@@ -52,9 +52,12 @@ export default {
   background-color: #AB47BC;
 }
 
-#matchesLinks * { text-align: center; }
+#matchesLinks * {
+  display: flex;
+  justify-content: center;
+}
 
-main { margin-top: -12vh; }
+main { margin-top: -10vw; }
 
 .link { color: white; }
 </style>
