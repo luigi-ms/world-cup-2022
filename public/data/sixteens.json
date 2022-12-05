@@ -30,7 +30,7 @@
     },
     {
       "cLeft": { "name": "Japão", "goals": 1 },
-      "cRight": { "name": "Croácia", "goals": 0 },
+      "cRight": { "name": "Croácia", "goals": 1 },
       "datetime": "05/12 12h",
       "local": "Al Janoub",
       "wasPlayed": false
