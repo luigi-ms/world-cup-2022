@@ -12,7 +12,7 @@
       <v-col md=10 id="roundSelect">
         <v-pagination v-model="roundPage"
           :value="roundPage"
-          length="3"
+          :length="totalPages"
           circle></v-pagination>
       </v-col>
     </v-row>
@@ -36,6 +36,7 @@
     components: { MatchList },
     data: () => {
       return {
+        totalPages: 3,
         roundPage: 0,
         roundOne: [],
         showOne: true,
@@ -66,17 +67,17 @@
       fetch('/data/groups-one.json')
         .then(res => res.json())
         .then(json => this.roundOne = json.matches)
-        .catch(rej => console.error(rej));
+        .catch(() => console.error("Error on fetch 1"));
 
       fetch('/data/groups-two.json')
         .then(res => res.json())
         .then(json => this.roundTwo = json.matches)
-        .catch(rej => console.error(rej));
+        .catch(() => console.error("Error on fetch 2"));
 
       fetch('/data/groups-three.json')
         .then(res => res.json())
         .then(json => this.roundThree = json.matches)
-        .catch(rej => console.error(rej));
+        .catch(() => console.error("Error on fetch 3"));
 
       this.roundPage = 1;
     }

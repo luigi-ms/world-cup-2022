@@ -5,9 +5,7 @@
         v-for="m in matches" 
         :key="m.datetime">
         <v-skeleton-loader 
-          v-show="loading" 
-          v-for="n in empty"
-          :key="n"
+          v-show="loading"
           type="image"/>
         <match-box v-show="!loading"
           :countryLeft="m.cLeft"
@@ -29,15 +27,16 @@
     components: { MatchBox },
     data: () => {
       return { 
-        loading: true,
-        empty: [0, 0, 0, 0, 0, 0, 0, 0]
+        loading: true
       };
     },
     props: {
       matches: Array
     },
     mounted(){
-      
+      if(this.matches){
+        this.loading = false;
+      }
     }
   };
 </script>

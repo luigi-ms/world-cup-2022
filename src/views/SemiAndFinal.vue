@@ -36,7 +36,7 @@
       }
     },
     mounted(){
-      fetch('/data/groups-one.json')
+      fetch('/data/semi-final.json')
         .then(res => res.json())
         .then(json => {
           this.semis = json.semiMatches;
