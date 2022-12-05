@@ -1,147 +1,157 @@
 {
-  "table-header": ["P", "J", "V", "E", "D"],
-  "A": {
-    "first": {
-      "name": "Holanda",
-      "points": [7, 3, 2, 1, 0]
+  "tableHeader": ["Nome", "P", "J", "V", "E", "D"],
+  "groups": [
+    {
+      "groupName": "A",
+      "first": {
+        "name": "Holanda",
+        "points": [7, 3, 2, 1, 0]
+      },
+      "second": {
+        "name": "Senegal",
+        "points": [6, 3, 2, 0, 1]
+      },
+      "third": {
+        "name": "Equador",
+        "points": [4, 3, 1, 1, 1]
+      },
+      "fourth": {
+        "name": "Catar",
+        "points": [0, 3, 0, 0, 3]
+      }
     },
-    "second": {
-      "name": "Senegal",
-      "points": [6, 3, 2, 0, 1]
+    {
+      "groupName": "B",
+      "first": {
+        "name": "Inglaterra",
+        "points": [7, 3, 2, 1, 0]
+      },
+      "second": {
+        "name": "EUA",
+        "points": [5, 3, 1, 2, 0]
+      },
+      "third": {
+        "name": "Irã",
+        "points": [3, 3, 1, 0, 2]
+      },
+      "fourth": {
+        "name": "Gales",
+        "points": [1, 3, 0, 1, 2]
+      }
     },
-    "third": {
-      "name": "Equador",
-      "points": [4, 3, 1, 1, 1]
+    {
+      "groupName": "C",
+      "first": {
+        "name": "Argentina",
+        "points": [6, 3, 2, 0, 1]
+      },
+      "second": {
+        "name": "Polônia",
+        "points": [4, 3, 1, 1, 1]
+      },
+      "third": {
+        "name": "México",
+        "points": [4, 3, 1, 1, 1]
+      },
+      "fourth": {
+        "name": "Arábia Saudita",
+        "points": [3, 3, 1, 0, 2]
+      }
     },
-    "fourth": {
-      "name": "Catar",
-      "points": [0, 3, 0, 0, 3]
+    {
+      "groupName": "D",
+      "first": {
+        "name": "França",
+        "points": [6, 3, 2, 0, 1]
+      },
+      "second": {
+        "name": "Austrália",
+        "points": [6, 3, 2, 0, 1]
+      },
+      "third": {
+        "name": "Tunísia",
+        "points": [4, 3, 1, 1, 1]
+      },
+      "fourth": {
+        "name": "Dinamarca",
+        "points": [1, 3, 0, 1, 2]
+      }
+    },
+    {
+      "groupName": "E",
+      "first": {
+        "name": "Japão",
+        "points": [6, 3, 2, 0, 1]
+      },
+      "second": {
+        "name": "Espanha",
+        "points": [4, 3, 1, 1, 1]
+      },
+      "third": {
+        "name": "Alemanha",
+        "points": [4, 3, 1, 1, 1]
+      },
+      "fourth": {
+        "name": "Costa Rica",
+        "points": [3, 3, 1, 0, 2]
+      }
+    },
+    {
+      "groupName": "F",
+      "first": {
+        "name": "Marrocos",
+        "points": [7, 3, 2, 1, 0]
+      },
+      "second": {
+        "name": "Croácia",
+        "points": [5, 3, 1, 2, 0]
+      },
+      "third": {
+        "name": "Bélgica",
+        "points": [4, 3, 1, 1, 1]
+     },
+      "fourth": {
+        "name": "Canadá",
+        "points": [0, 3, 0, 0, 3]
+      }
+    },
+    {
+      "groupName": "G",
+      "first": {
+        "name": "Brasil",
+        "points": [6, 3, 2, 0, 1]
+      },
+      "second": {
+        "name": "Suíça",
+        "points": [6, 3, 2, 0, 1]
+      },
+      "third": {
+        "name": "Camarões",
+        "points": [4, 3, 1, 1, 1]
+      },
+      "fourth": {
+        "name": "Sérvia",
+        "points": [1, 3, 0, 1, 2]
+      }
+    },
+    {
+      "groupName": "H",
+      "first": {
+        "name": "Portugal",
+        "points": [6, 3, 2, 0, 1]
+      },
+      "second": {
+        "name": "Coréia do Sul",
+        "points": [4, 3, 1, 1, 1]
+      },
+      "third": {
+        "name": "Uruguai",
+        "points": [4, 3, 1, 1, 1]
+      },
+      "fourth": {
+        "name": "Gana",
+        "points": [3, 3, 1, 0, 2]
+      }
     }
-  },
-  "B": {
-    "first": {
-      "name": "Inglaterra",
-      "points": [7, 3, 2, 1, 0]
-    },
-    "second": {
-      "name": "EUA",
-      "points": [5, 3, 1, 2, 0]
-    },
-    "third": {
-      "name": "Irã",
-      "points": [3, 3, 1, 0, 2]
-    },
-    "fourth": {
-      "name": "Gales",
-      "points": [1, 3, 0, 1, 2]
-    }
-  },
-  "C": {
-    "first": {
-      "name": "Argentina",
-      "points": [6, 3, 2, 0, 1]
-    },
-    "second": {
-      "name": "Polônia",
-      "points": [4, 3, 1, 1, 1]
-    },
-    "third": {
-      "name": "México",
-      "points": [4, 3, 1, 1, 1]
-    },
-    "fourth": {
-      "name": "Arábia Saudita",
-      "points": [3, 3, 1, 0, 2]
-    }
-  },
-  "D": {
-    "first": {
-      "name": "França",
-      "points": [6, 3, 2, 0, 1]
-    },
-    "second": {
-      "name": "Austrália",
-      "points": [6, 3, 2, 0, 1]
-    },
-    "third": {
-      "name": "Tunísia",
-      "points": [4, 3, 1, 1, 1]
-    },
-    "fourth": {
-      "name": "Dinamarca",
-      "points": [1, 3, 0, 1, 2]
-    }
-  },
-  "E": {
-    "first": {
-      "name": "Japão",
-      "points": [6, 3, 2, 0, 1]
-    },
-    "second": {
-      "name": "Espanha",
-      "points": [4, 3, 1, 1, 1]
-    },
-    "third": {
-      "name": "Alemanha",
-      "points": [4, 3, 1, 1, 1]
-    },
-    "fourth": {
-      "name": "Costa Rica",
-      "points": [3, 3, 1, 0, 2]
-    }
-  },
-  "F": {
-    "first": {
-      "name": "Marrocos",
-      "points": [7, 3, 2, 1, 0]
-    },
-    "second": {
-      "name": "Croácia",
-      "points": [5, 3, 1, 2, 0]
-    },
-    "third": {
-      "name": "Bélgica",
-      "points": [4, 3, 1, 1, 1]
-    },
-    "fourth": {
-      "name": "Canadá",
-      "points": [0, 3, 0, 0, 3]
-    }
-  },
-  "G": {
-    "first": {
-      "name": "Brasil",
-      "points": [6, 3, 2, 0, 1]
-    },
-    "second": {
-      "name": "Suíça",
-      "points": [6, 3, 2, 0, 1]
-    },
-    "third": {
-      "name": "Camarões",
-      "points": [4, 3, 1, 1, 1]
-    },
-    "fourth": {
-      "name": "Sérvia",
-      "points": [1, 3, 0, 1, 2]
-    }
-  },
-  "H": {
-    "first": {
-      "name": "Portugal",
-      "points": [6, 3, 2, 0, 1]
-    },
-    "second": {
-      "name": "Coréia do Sul",
-      "points": [4, 3, 1, 1, 1]
-    },
-    "third": {
-      "name": "Uruguai",
-      "points": [4, 3, 1, 1, 1]
-    },
-    "fourth": {
-      "name": "Gana",
-      "points": [3, 3, 1, 0, 2]
-    }
-  }
+  ]
 }
