@@ -115,18 +115,18 @@
     {
       "cLeft": { 
         "name": "Portugal", 
-        "goals": 0,
+        "goals": 6,
         "penalty": 0 
       },
       "cRight": { 
         "name": "Suíça", 
-        "goals": 0,
+        "goals": 1,
         "penalty": 0 
       },
       "datetime": "06/12 16h",
       "local": "Lusail Stadium",
       "penaltyEnding": false,
-      "wasPlayed": false
+      "wasPlayed": true
     }
   ]
 }

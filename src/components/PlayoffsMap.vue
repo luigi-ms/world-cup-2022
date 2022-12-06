@@ -1,7 +1,7 @@
 <template>
   <v-container id="phases">
     <v-row justify="center">Oitavas de final</v-row>
-    <v-row>
+    <v-row align="baseline">
       <v-col class="playoffMatch" cols="3">
         <mini-match 
           countryLeft="A1" 
@@ -115,7 +115,7 @@
 .playoffMatch {
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
   border: 1px solid blue;
 }
 
