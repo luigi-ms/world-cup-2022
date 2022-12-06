@@ -100,7 +100,7 @@
       "cLeft": { 
         "name": "Marrocos", 
         "goals": 0,
-        "penalty": 0
+        "penalty": 3
       },
       "cRight": { 
         "name": "Espanha", 
@@ -109,8 +109,8 @@
       },
       "datetime": "06/12 12h",
       "local": "Ed. City",
-      "penaltyEnding": false,
-      "wasPlayed": false
+      "penaltyEnding": true,
+      "wasPlayed": true
     },
     {
       "cLeft": { 
