@@ -51,7 +51,24 @@
         </v-col>
         <v-col :class="(rightWon) ? 'winnerSign' : ''">
           <span>{{ countryRight.goals }}</span>
-          <span v-if="rightWon" class="winnerSign"></span>
+        </v-col>
+      </v-row>
+      <v-row v-show="penaltyEnding">
+        <v-divider></v-divider>
+      </v-row>
+      <v-row id="penalties" v-show="penaltyEnding">
+        <v-col :class="(leftWonPenalties) ? 'winnerSign' : ''">
+          <span>
+            {{ countryLeft.penalty }}
+          </span>
+        </v-col>
+        <v-col>
+          <span>Pênaltis</span>
+        </v-col>
+        <v-col :class="(rightWonPenalties) ? 'winnerSign' : ''">
+          <span>
+            {{ countryRight.penalty }}
+          </span>
         </v-col>
       </v-row>
     </v-container>
@@ -67,6 +84,8 @@ export default {
       hour: "00",
       leftWon: false,
       rightWon: false,
+      leftWonPenalties: false,
+      rightWonPenalties: false,
       countries: {}
     }
   },
@@ -91,6 +110,10 @@ export default {
       type: String,
       default: "Stadium"
     },
+    penaltyEnding: {
+      type: Boolean,
+      default: false
+    },
     wasPlayed: {
       type: Boolean,
       default: false
@@ -103,24 +126,37 @@ export default {
       .catch(() => console.error("Error on get countries"));
   },
   mounted(){
+    const leftScoredMost = (this.countryLeft.goals > this.countryRight.goals);
+    const rightScoredMost = (this.countryRight.goals > this.countryLeft.goals);
+    const leftScoredPenalties = (this.countryLeft.penalty > this.countryRight.penalty);
+    const rightScoredPenalties = (this.countryRight.penalty > this.countryLeft.penalty);
+
     this.date = this.datetime.substr(0, 5);
     this.hour = this.datetime.substr(6);
     
-    if(this.wasPlayed && (this.countryLeft.goals > this.countryRight.goals)){
+    if(this.wasPlayed && leftScoredMost){
       this.leftWon = true;
-    }else if(this.wasPlayed && (this.countryLeft.goals < this.countryRight.goals)){
+    }else if(this.wasPlayed && rightScoredMost){
+      console.log('right won on normal')
       this.rightWon = true;
+    }else if(this.wasPlayed && leftScoredPenalties){
+      this.leftWonPenalties = true;
+    }else if(this.wasPlayed && rightScoredPenalties){
+      console.log('right won on penalties')
+      this.rightWonPenalties = true;
     }
   },
   methods: {
     getFlag(countryName){
-      if(countryName === "") return "";
-
       const abrev = this.countries[countryName];
 
-      return (abrev !== "ESP") 
-        ? require('../assets/'+abrev+'.png')
-        : require('../assets/'+abrev+'.jpeg');
+      if(abrev){
+        return (abrev !== "ESP") 
+          ? require('../assets/'+abrev+'.png')
+          : require('../assets/'+abrev+'.jpeg');
+      }else{
+        return "";
+      }
     },
     isNameEmpty(){ 
       return this.countryLeft.name === "" 
@@ -148,7 +184,7 @@ export default {
 
 #goals { font-size: 1.35rem; }
 
-#goals > *, #countryNames > * {
+#goals > *, #countryNames > *, #penalties > * {
   display: flex;
   justify-content: center;
 }
@@ -158,6 +194,15 @@ export default {
 #metadata * { text-align: center; }
 
 .winnerSign { border-bottom: 3px solid green; }
+
+.penalty {
+  font-size: 1rem;
+  align-self: baseline;
+  margin-left: 1vw;
+  margin-right: 1vw
+} 
+
+.penalty + * { align-self: baseline; }
 
 .flag { 
   margin-right: 2vw;

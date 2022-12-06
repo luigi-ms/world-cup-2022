@@ -2,8 +2,8 @@
   <v-container>
     <v-row justify-md="space-around">
       <v-col cols="12" md="6" lg="4" xl="4"
-        v-for="m in matches" 
-        :key="m.datetime">
+        v-for="(m, i) in matches" 
+        :key="i">
         <v-skeleton-loader 
           v-show="loading"
           type="image"/>
@@ -12,6 +12,7 @@
           :countryRight="m.cRight"
           :datetime="m.datetime"
           :stadium="m.local"
+          :penaltyEnding="m.penaltyEnding"
           :wasPlayed="m.wasPlayed"
         />
       </v-col>
