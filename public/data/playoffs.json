@@ -5,6 +5,21 @@
       "cLeft": "Brasil", 
       "cRight": "Coreia do Sul" 
     },
+    { 
+      "key": "S4",
+      "cLeft": "Holanda", 
+      "cRight": "EUA" 
+    },
+    {
+      "key": "S5",
+      "cLeft": "Portugal", 
+      "cRight": "Suíça" 
+    },
+    {
+      "key": "S8",
+      "cLeft": "Inglaterra", 
+      "cRight": "Senegal" 
+    },
     {
       "key": "S2",
       "cLeft": "Japão", 
@@ -16,16 +31,6 @@
       "cRight": "Austrália" 
     },
     { 
-      "key": "S4",
-      "cLeft": "Holanda", 
-      "cRight": "EUA" 
-    },
-    {
-      "key": "S5",
-      "cLeft": "Portugal", 
-      "cRight": "Suíça" 
-    },
-    { 
       "key": "S6",
       "cLeft": "Marrocos", 
       "cRight": "Espanha" 
@@ -34,11 +39,6 @@
       "key": "S7",
       "cLeft": "França", 
       "cRight": "Polônia" 
-    },
-    {
-      "key": "S8",
-      "cLeft": "Inglaterra", 
-      "cRight": "Senegal" 
     }
   ],
   "quarters": [
