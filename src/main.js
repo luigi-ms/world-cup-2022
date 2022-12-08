@@ -6,11 +6,12 @@ import VueCompositionAPI from '@vue/composition-api'
 import Ads from 'vue-google-adsense';
 
 Vue.config.productionTip = false
+const ads = Ads.Adsense;
 
 new Vue({
   router,
   vuetify,
   VueCompositionAPI,
-  Ads.Adsense,
+  ads,
   render: h => h(App)
 }).$mount('#app')
