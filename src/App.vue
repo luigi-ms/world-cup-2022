@@ -17,7 +17,7 @@
           </v-tab>
           <v-tab>
             <router-link to="/map-and-table">
-              <span class="link">Chaveamento e Tabela</span>
+              <span class="link">Tabela e Chaveamento</span>
             </router-link>
           </v-tab>
         </v-tabs>
@@ -27,6 +27,14 @@
     <v-main>
       <router-view/>
     </v-main>
+
+    <v-footer padless
+      color="purple darken-3"
+      dark>
+      <v-col class="d-flex justify-center">
+        <h2>{{ today.getFullYear() }} - Luigi Moraes</h2>
+      </v-col>
+    </v-footer>
   </v-app>
 </template>
 
@@ -36,7 +44,7 @@ export default {
   name: 'App',
 
   data: () => ({
-    //
+    today: new Date()
   }),
 };
 </script>

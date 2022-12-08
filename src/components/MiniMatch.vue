@@ -4,13 +4,6 @@
     elevation="4" 
     rounded>
     <v-container>
-      <v-row v-if="isFinalMatch">
-        <v-col 
-          cols="12" 
-          align="center">
-          <h3>Final</h3>
-        </v-col>
-      </v-row>
       <v-row>
         <v-col 
           align="center" 
@@ -73,10 +66,6 @@ export default {
     countryRight: {
       type: String,
       default: "Team"
-    },
-    isFinalMatch: {
-      type: Boolean,
-      default: false
     }
   },
   mounted(){

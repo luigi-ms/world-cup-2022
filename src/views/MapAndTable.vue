@@ -65,8 +65,8 @@
       fetch('/data/playoffs.json')
         .then(res => res.json())
         .then(json => {
-          this.sixteens = [json.sixteens1, json.sixteens2];
-          this.quarters = [json.quarters1, json.quarters2];
+          this.sixteens = json.sixteens;
+          this.quarters = json.quarters;
           this.semifinals = json.semifinals;
           this.finals = json.finals;
 

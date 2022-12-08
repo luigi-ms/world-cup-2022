@@ -1,5 +1,5 @@
 {
-  "sixteens1": [
+  "sixteens": [
     { 
       "key": "S1", 
       "cLeft": "Brasil", 
@@ -19,9 +19,7 @@
       "key": "S4",
       "cLeft": "Holanda", 
       "cRight": "EUA" 
-    }
-  ],
-  "sixteens2": [
+    },
     {
       "key": "S5",
       "cLeft": "Portugal", 
@@ -43,7 +41,7 @@
       "cRight": "Senegal" 
     }
   ],
-  "quarters1": [
+  "quarters": [
     { 
       "key": "Q1",
       "cLeft": "Brasil", 
@@ -53,9 +51,7 @@
       "key": "Q2",
       "cLeft": "Holanda", 
       "cRight": "Argentina" 
-    }
-  ],
-  "quarters2": [
+    },
     { 
       "key":"Q3",
       "cLeft": "Portugal", 
