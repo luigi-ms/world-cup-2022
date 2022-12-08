@@ -16,6 +16,12 @@
           circle></v-pagination>
       </v-col>
     </v-row>
+    <v-row>
+      <Adsense 
+        data-ad-client="ca-pub-4580509034945075"
+        data-ad-slot="1649269846"
+      />
+    </v-row>
     <div v-if="showOne">
       <match-list :matches=roundOne key="round-one" />
     </div>

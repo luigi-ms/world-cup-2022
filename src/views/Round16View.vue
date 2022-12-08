@@ -6,6 +6,12 @@
       </v-col>
     </v-row>
     <v-row>
+      <Adsense 
+        data-ad-client="ca-pub-4580509034945075"
+        data-ad-slot="1649269846"
+      />
+    </v-row>
+    <v-row>
       <v-col>
         <match-list :matches=sixteens key="round-sixteens" />
       </v-col>
