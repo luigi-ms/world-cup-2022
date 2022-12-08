@@ -1,29 +1,87 @@
 {
   "sixteens1": [
-    { "cLeft": "Brasil", "cRight": "Coréia do Sul" },
-    { "cLeft": "Japão", "cRight": "Croácia" },
-    { "cLeft": "Argentina", "cRight": "Austrália" },
-    { "cLeft": "Holanda", "cRight": "EUA" }
+    { 
+      "key": "S1", 
+      "cLeft": "Brasil", 
+      "cRight": "Coreia do Sul" 
+    },
+    {
+      "key": "S2",
+      "cLeft": "Japão", 
+      "cRight": "Croácia" 
+    },
+    { 
+      "key": "S3",
+      "cLeft": "Argentina", 
+      "cRight": "Austrália" 
+    },
+    { 
+      "key": "S4",
+      "cLeft": "Holanda", 
+      "cRight": "EUA" 
+    }
   ],
   "sixteens2": [
-    { "cLeft": "Portugal", "cRight": "Suíça" },
-    { "cLeft": "Marrocos", "cRight": "Espanha" },
-    { "cLeft": "França", "cRight": "Polônia" },
-    { "cLeft": "Inglaterra", "cRight": "Senegal" }
+    {
+      "key": "S5",
+      "cLeft": "Portugal", 
+      "cRight": "Suíça" 
+    },
+    { 
+      "key": "S6",
+      "cLeft": "Marrocos", 
+      "cRight": "Espanha" 
+    },
+    { 
+      "key": "S7",
+      "cLeft": "França", 
+      "cRight": "Polônia" 
+    },
+    {
+      "key": "S8",
+      "cLeft": "Inglaterra", 
+      "cRight": "Senegal" 
+    }
   ],
-  "quarter1": [
-    { "cLeft": "Brasil", "cRight": "Croácia" },
-    { "cLeft": "Holanda", "cRight": "Argentina" }
+  "quarters1": [
+    { 
+      "key": "Q1",
+      "cLeft": "Brasil", 
+      "cRight": "Croácia" 
+    },
+    { 
+      "key": "Q2",
+      "cLeft": "Holanda", 
+      "cRight": "Argentina" 
+    }
   ],
-  "quarter2": [
-    { "cLeft": "", "cRight": "Marrocos" },
-    { "cLeft": "Inglaterra", "cRight": "França" }
+  "quarters2": [
+    { 
+      "key":"Q3",
+      "cLeft": "Portugal", 
+      "cRight": "Marrocos" 
+    },
+    { 
+      "key": "Q4",
+      "cLeft": "Inglaterra", 
+      "cRight": "França" 
+    }
   ],
   "semifinals": [
-    { "cLeft": "", "cRight": "" },
-    { "cLeft": "", "cRight": "" }
+    { 
+      "key": "SF1",
+      "cLeft": "", 
+      "cRight": "" 
+    },
+    { 
+      "key": "SF2",
+      "cLeft": "", 
+      "cRight": "" 
+    }
   ],
-  "finals": [
-    { "cLeft": "", "cRight": "" }
-  ]
+  "finals": { 
+    "key": "F1",
+    "cLeft": "", 
+    "cRight": "" 
+  }
 }

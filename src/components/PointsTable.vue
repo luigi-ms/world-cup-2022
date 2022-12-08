@@ -12,7 +12,7 @@
            </th>
           </tr>
           <tr>
-            <th v-for="header in tableHeader" 
+            <th v-for="header in headers" 
               :key="header">
               <span class="groupHeader">{{ header }}</span>
             </th>
@@ -60,7 +60,8 @@
       return {};
     },
     props: {
-      group: Object
+      group: Object,
+      headers: Array
     }
   }
 </script>

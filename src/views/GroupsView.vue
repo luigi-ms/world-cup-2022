@@ -12,7 +12,7 @@
       <v-col md=10 id="roundSelect">
         <v-pagination v-model="roundPage"
           :value="roundPage"
-          :length="totalPages"
+          :length=3
           circle></v-pagination>
       </v-col>
     </v-row>
@@ -36,7 +36,6 @@
     components: { MatchList },
     data: () => {
       return {
-        totalPages: 3,
         roundPage: 0,
         roundOne: [],
         showOne: true,

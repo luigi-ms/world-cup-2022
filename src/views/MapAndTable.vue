@@ -5,14 +5,17 @@
         <h1>Tabela de pontuação</h1>
       </v-col>
     </v-row>
-    <v-row justify="space-between" >
-      <v-col v-for="group in groups"
-        :key="group"
+    <v-row justify="space-between">
+      <v-col v-for="(group, index) in groups"
+        :key="index"
         cols="12" 
         md="6" 
         lg="2" 
         xl="4">
-        <points-table :group="group" />
+        <points-table 
+          :headers="tableHeader"
+          :group="group" 
+        />
       </v-col> 
     </v-row>
     <v-row>
@@ -22,7 +25,12 @@
     </v-row>
     <v-row>
       <v-col>
-        <playoffs-map />
+        <playoffs-map 
+          :sixteens="sixteens"
+          :quarters="quarters"
+          :semis="semifinals"
+          :finals="finals"
+        />
       </v-col> 
     </v-row>
   </v-container>
@@ -38,7 +46,11 @@
     data: () => {
       return {
         tableHeader: [],
-        groups: []
+        groups: [],
+        sixteens: [],
+        quarters: [],
+        semifinals: [],
+        finals: {}
       }
     },
     mounted(){
@@ -49,6 +61,18 @@
           this.groups = json.groups;
         })
         .catch(() => console.error("Error on get table"));
+        
+      fetch('/data/playoffs.json')
+        .then(res => res.json())
+        .then(json => {
+          this.sixteens = [json.sixteens1, json.sixteens2];
+          this.quarters = [json.quarters1, json.quarters2];
+          this.semifinals = json.semifinals;
+          this.finals = json.finals;
+
+          console.log(this.semifinals[0]);
+        })
+        .catch(() => console.error("Error on get playoffs"));
     }
   }
 </script>
