@@ -7,8 +7,8 @@
       <v-row>
         <v-col 
           align="center" 
-          v-if="isNameEmpty()">
-          <v-icon v-if="isNameEmpty()">
+          v-if="isLeftEmpty()">
+          <v-icon v-if="isLeftEmpty()">
             mdi-flag
           </v-icon>
           <span>Team</span>
@@ -26,8 +26,8 @@
         </v-col>
         <v-col 
           align="center" 
-          v-if="isNameEmpty()">
-          <v-icon v-if="isNameEmpty()">
+          v-if="isRightEmpty()">
+          <v-icon v-if="isRightEmpty()">
             mdi-flag
           </v-icon>
           <span>Team</span>
@@ -86,9 +86,11 @@ export default {
         return "";
       }
     },
-    isNameEmpty(){ 
-      return this.countryLeft === "" 
-      && this.countryRight === ""; 
+    isLeftEmpty(){ 
+      return this.countryLeft.length === 0;
+    },
+    isRightEmpty(){
+      return this.countryRight.length === 0; 
     }
   }
 };

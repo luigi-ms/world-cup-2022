@@ -16,8 +16,8 @@
         </v-col>
       </v-row>
       <v-row id="countryNames">
-        <v-col v-if="isNameEmpty()">
-          <v-icon v-if="isNameEmpty()">
+        <v-col v-if="isLeftEmpty()">
+          <v-icon v-if="isLeftEmpty()">
             mdi-flag
           </v-icon>
           <span>Team</span>
@@ -30,8 +30,8 @@
             :alt=countryLeft.name></v-img>
           <span>{{ countryLeft.name }}</span>
         </v-col>
-        <v-col v-if="isNameEmpty()">
-          <v-icon v-if="isNameEmpty()">
+        <v-col v-if="isRightEmpty()">
+          <v-icon v-if="isRightEmpty()">
             mdi-flag
           </v-icon>
           <span>Team</span>
