@@ -4,17 +4,17 @@
       "cLeft": { 
         "name": "Croácia", 
         "goals": 1,
-        "penalty": 0
+        "penalty": 4
       },
       "cRight": { 
         "name": "Brasil", 
         "goals": 1,
-        "penalty": 0
+        "penalty": 2
        },
       "datetime": "09/12 12h",
       "local": "Ed. City",
       "penaltyEnding": true,
-      "wasPlayed": false
+      "wasPlayed": true
     },
     {
       "cLeft": { 
