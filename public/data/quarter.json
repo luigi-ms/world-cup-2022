@@ -19,12 +19,12 @@
     {
       "cLeft": { 
         "name": "Holanda", 
-        "goals": 0,
+        "goals": 1,
         "penalty": 0
        },
       "cRight": { 
         "name": "Argentina", 
-        "goals": 0,
+        "goals": 2,
         "penalty": 0
        },
       "datetime": "09/12 16h",
