@@ -66,18 +66,18 @@
   "semifinals": [
     { 
       "key": "SF1",
-      "cLeft": "Brasil",
-      "cRight": "Holanda" 
+      "cLeft": "Croácia",
+      "cRight": "Argentina" 
     },
     { 
       "key": "SF2",
-      "cLeft": "Marrocos", 
-      "cRight": "Inglaterra" 
+      "cLeft": "", 
+      "cRight": "" 
     }
   ],
   "finals": { 
     "key": "F1",
-    "cLeft": "Brasil", 
+    "cLeft": "", 
     "cRight": "" 
   }
 }
