@@ -100,6 +100,9 @@ export default {
       type: Object,
       default: () => {
         return { name: "Team", goals: 0 };
+      },
+      validator(value){
+        return value.length > 0;
       }
     },
     datetime: {
@@ -145,6 +148,8 @@ export default {
       console.log('right won on penalties')
       this.rightWonPenalties = true;
     }
+
+    console.log(this.countryRight);
   },
   methods: {
     getFlag(countryName){
@@ -158,9 +163,11 @@ export default {
         return "";
       }
     },
-    isNameEmpty(){ 
-      return this.countryLeft.name === "" 
-      && this.countryRight.name === ""; 
+    isLeftEmpty(){ 
+      return this.countryLeft.name.length === 0;
+    },
+    isRightEmpty(){ 
+      return this.countryRight.name.length === 0;
     }
   }
 };

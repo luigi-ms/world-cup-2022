@@ -77,15 +77,21 @@
           :countryRight="finals.cRight" />
       </v-col> 
     </v-row>
+    <v-row>
+      <v-col cols="12" align="center">
+        <winner-box name="Brasil" />
+      </v-col>
+    </v-row>
   </v-container>
 </template>
 
 <script>
   import MiniMatch from './MiniMatch.vue';
+  import WinnerBox from './WinnerBox.vue';
 
   export default {
     name: "PlayoffsMap",
-    components: { MiniMatch },
+    components: { MiniMatch, WinnerBox },
     data: () => {
       return { }
     },
