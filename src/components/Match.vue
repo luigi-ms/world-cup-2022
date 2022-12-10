@@ -100,9 +100,6 @@ export default {
       type: Object,
       default: () => {
         return { name: "Team", goals: 0 };
-      },
-      validator(value){
-        return value.length > 0;
       }
     },
     datetime: {
@@ -140,16 +137,12 @@ export default {
     if(this.wasPlayed && leftScoredMost){
       this.leftWon = true;
     }else if(this.wasPlayed && rightScoredMost){
-      console.log('right won on normal')
       this.rightWon = true;
     }else if(this.wasPlayed && leftScoredPenalties){
       this.leftWonPenalties = true;
     }else if(this.wasPlayed && rightScoredPenalties){
-      console.log('right won on penalties')
       this.rightWonPenalties = true;
     }
-
-    console.log(this.countryRight);
   },
   methods: {
     getFlag(countryName){

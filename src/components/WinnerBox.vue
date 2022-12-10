@@ -62,7 +62,7 @@ export default {
       }
     },
     isNameEmpty(){ 
-      return this.name === "";
+      return this.name.length === 0 || this.name === "Team";
     }
   }
 };
