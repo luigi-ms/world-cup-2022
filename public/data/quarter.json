@@ -51,18 +51,18 @@
     {
       "cLeft": { 
         "name": "Inglaterra", 
-        "goals": 0,
+        "goals": 1,
         "penalty": 0
        },
       "cRight": { 
         "name": "França", 
-        "goals": 0,
+        "goals": 2,
         "penalty": 0
        },
       "datetime": "10/12 16h",
       "local": "Al Bayt",
       "penaltyEnding": false,
-      "wasPlayed": false
+      "wasPlayed": true
     }
   ]
 }
