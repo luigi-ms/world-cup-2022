@@ -40,13 +40,13 @@
        },
       "cRight": { 
         "name": "Marrocos", 
-        "goals": 0,
+        "goals": 1,
         "penalty": 0
        },
       "datetime": "10/12 12h",
       "local": "Al Thumama",
       "penaltyEnding": false,
-      "wasPlayed": false
+      "wasPlayed": true
     },
     {
       "cLeft": { 
