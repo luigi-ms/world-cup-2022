@@ -1,12 +1,6 @@
 <template>
   <v-container>
     <v-row>
-      <Adsense 
-        data-ad-client="ca-pub-4580509034945075"
-        data-ad-slot="1649269846"
-      />
-    </v-row>
-    <v-row>
       <v-col>
         <h1>Tabela de pontuação</h1>
       </v-col>

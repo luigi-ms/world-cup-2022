@@ -16,8 +16,8 @@
         </v-col>
       </v-row>
       <v-row id="countryNames">
-        <v-col v-if="isNameEmpty()">
-          <v-icon v-if="isNameEmpty()">
+        <v-col v-if="isLeftEmpty()">
+          <v-icon v-if="isLeftEmpty()">
             mdi-flag
           </v-icon>
           <span>Team</span>
@@ -30,8 +30,8 @@
             :alt=countryLeft.name></v-img>
           <span>{{ countryLeft.name }}</span>
         </v-col>
-        <v-col v-if="isNameEmpty()">
-          <v-icon v-if="isNameEmpty()">
+        <v-col v-if="isRightEmpty()">
+          <v-icon v-if="isRightEmpty()">
             mdi-flag
           </v-icon>
           <span>Team</span>
@@ -137,12 +137,10 @@ export default {
     if(this.wasPlayed && leftScoredMost){
       this.leftWon = true;
     }else if(this.wasPlayed && rightScoredMost){
-      console.log('right won on normal')
       this.rightWon = true;
     }else if(this.wasPlayed && leftScoredPenalties){
       this.leftWonPenalties = true;
     }else if(this.wasPlayed && rightScoredPenalties){
-      console.log('right won on penalties')
       this.rightWonPenalties = true;
     }
   },
@@ -158,9 +156,11 @@ export default {
         return "";
       }
     },
-    isNameEmpty(){ 
-      return this.countryLeft.name === "" 
-      && this.countryRight.name === ""; 
+    isLeftEmpty(){ 
+      return this.countryLeft.name.length === 0;
+    },
+    isRightEmpty(){ 
+      return this.countryRight.name.length === 0;
     }
   }
 };

@@ -1,47 +1,28 @@
 <template>
   <v-sheet 
-    id="round" 
+    id="winner" 
     elevation="4" 
     rounded>
     <v-container>
       <v-row>
-        <v-col 
-          align="center" 
-          v-if="isLeftEmpty()">
-          <v-icon v-if="isLeftEmpty()">
+        <v-col>
+          <h3>Campeão da Copa do Mundo 2022</h3>
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col v-if="isNameEmpty()">
+          <v-icon v-if="isNameEmpty()">
             mdi-flag
           </v-icon>
           <span>Team</span>
         </v-col>
-        <v-col 
-          justify="center"
-          align="center" 
-          v-else>
+        <v-col v-else>
           <v-img
             class="flag"
             max-width=30 
-            :src="getFlag(countryLeft)"
-            :alt=countryLeft></v-img>
-          <span>{{ countryLeft }}</span>
-        </v-col>
-        <v-col 
-          align="center" 
-          v-if="isRightEmpty()">
-          <v-icon v-if="isRightEmpty()">
-            mdi-flag
-          </v-icon>
-          <span>Team</span>
-        </v-col>
-        <v-col 
-          justify="center"
-          align="center" 
-          v-else>
-          <v-img
-            class="flag"
-            max-width=30 
-            :src="getFlag(countryRight)"
-            :alt=countryRight></v-img>
-          <span>{{ countryRight }}</span>
+            :src="getFlag(name)"
+            :alt=name></v-img>
+          <span>{{ name }}</span>
         </v-col>
       </v-row>
     </v-container>
@@ -50,20 +31,14 @@
 
 <script>
 export default {
-  name: "MiniMatch",
+  name: "WinnerBox",
   data: () => {
     return {
-      leftWon: false,
-      rightWon: false,
       countries: {}
     }
   },
   props: {
-    countryLeft: {
-      type: String,
-      default: "Team"
-    },
-    countryRight: {
+    name: {
       type: String,
       default: "Team"
     }
@@ -86,11 +61,8 @@ export default {
         return "";
       }
     },
-    isLeftEmpty(){ 
-      return this.countryLeft.length === 0;
-    },
-    isRightEmpty(){
-      return this.countryRight.length === 0; 
+    isNameEmpty(){ 
+      return this.name.length === 0 || this.name === "Team";
     }
   }
 };
@@ -99,10 +71,10 @@ export default {
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
-#round {
+#winner {
   font-family: 'Open Sans', 'Arial', sans-serif;
   margin-top: 2vh;
-  width: 20vw;
+  width: 60vw;
 }
 
 .flag{ border: 0.6px solid black; }

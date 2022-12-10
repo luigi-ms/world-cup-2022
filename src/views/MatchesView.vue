@@ -5,7 +5,9 @@
       <v-list-item
         v-for="link in links"
         :key="link.text">
-        <router-link class="link" :to="link.to">
+        <router-link 
+          :class="(activeLink === link.name) ? 'active' : 'link'" 
+          :to="link.to">
           {{ link.text }}
         </router-link>
       </v-list-item>
@@ -18,7 +20,6 @@
 </template>
 
 <script>
-
 export default {
   name: 'MatchesView',
   data: () => {
@@ -26,22 +27,30 @@ export default {
       links: [
         {
           text: "Grupos",
-          to: "/matches/groups"
+          to: "/matches/groups",
+          name: "groups"
         },
         {
           text: "Oitavas",
-          to: "/matches/round-16"
+          to: "/matches/round-16",
+          name: "roundOf16"
         },
         {
           text: "Quartas",
-          to: "/matches/quarter"
+          to: "/matches/quarter",
+          name: "quarterFinal"
         },
         {
           text: "Semi e Final",
-          to: "/matches/semi-and-final"
+          to: "/matches/semi-and-final",
+          name: "semiAndFinal"
         }
-      ]
-    }
+      ],
+      activeLink: "groups"
+    };
+  },
+  updated(){
+    this.activeLink = this.$route.name;
   }
 };
 </script>
@@ -52,10 +61,12 @@ export default {
   background-color: #AB47BC;
 }
 
-#matchesLinks * {
+#matchesLinks > * {
   display: flex;
   justify-content: center;
 }
+
+.active { color: #9CCC65; }
 
 main { margin-top: -10vw; }
 
