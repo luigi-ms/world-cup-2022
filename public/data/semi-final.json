@@ -3,7 +3,7 @@
     {
       "cLeft": { 
         "name": "Argentina", 
-        "goals": 2,
+        "goals": 3,
         "penalty": 0
        },
       "cRight": { 
@@ -14,7 +14,7 @@
       "datetime": "13/12 16h",
       "local": "Lusail Stadium",
       "penaltyEnding": false,
-      "wasPlayed": false
+      "wasPlayed": true
     },
     {
       "cLeft": { 
@@ -36,7 +36,7 @@
   "finalsMatches": [
     {
       "cLeft": { 
-        "name": "", 
+        "name": "Croácia", 
         "goals": 0,
         "penalty": 0
        },
@@ -52,7 +52,7 @@
     },
     {
       "cLeft": { 
-        "name": "", 
+        "name": "Argentina", 
         "goals": 0,
         "penalty": 0
        },
