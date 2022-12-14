@@ -19,7 +19,7 @@
     {
       "cLeft": { 
         "name": "França", 
-        "goals": 1,
+        "goals": 2,
         "penalty": 0
        },
       "cRight": { 
@@ -30,7 +30,7 @@
       "datetime": "14/12 16h",
       "local": "Al Bayt",
       "penaltyEnding": false,
-      "wasPlayed": false
+      "wasPlayed": true
     }
   ],
   "finalsMatches": [
@@ -41,7 +41,7 @@
         "penalty": 0
        },
       "cRight": { 
-        "name": "", 
+        "name": "Marrocos", 
         "goals": 0,
         "penalty": 0
        },
@@ -57,7 +57,7 @@
         "penalty": 0
        },
       "cRight": { 
-        "name": "", 
+        "name": "França", 
         "goals": 0,
         "penalty": 0
        },
