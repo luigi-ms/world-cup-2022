@@ -37,18 +37,18 @@
     {
       "cLeft": { 
         "name": "Croácia", 
-        "goals": 0,
+        "goals": 2,
         "penalty": 0
        },
       "cRight": { 
         "name": "Marrocos", 
-        "goals": 0,
+        "goals": 1,
         "penalty": 0
        },
       "datetime": "17/12 12h",
       "local": "Khalifa Int.",
       "penaltyEnding": false,
-      "wasPlayed": false
+      "wasPlayed": true
     },
     {
       "cLeft": { 
