@@ -79,7 +79,7 @@
     </v-row>
     <v-row>
       <v-col cols="12" align="center">
-        <winner-box />
+        <winner-box name="Argentina" />
       </v-col>
     </v-row>
   </v-container>

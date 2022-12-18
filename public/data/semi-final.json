@@ -53,18 +53,18 @@
     {
       "cLeft": { 
         "name": "Argentina", 
-        "goals": 0,
-        "penalty": 0
+        "goals": 3,
+        "penalty": 4
        },
       "cRight": { 
         "name": "França", 
-        "goals": 0,
-        "penalty": 0
+        "goals": 3,
+        "penalty": 2
        },
       "datetime": "18/12 12h",
       "local": "Lusail Stadium",
-      "penaltyEnding": false,
-      "wasPlayed": false
+      "penaltyEnding": true,
+      "wasPlayed": true
     }
   ]
 }
